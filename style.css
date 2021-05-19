@@ -1,0 +1,1176 @@
+/*body*/
+body
+{
+    
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffff;
+    display: grid;
+   
+}
+@media all and (max-width: 487px) 
+{
+    body
+    {
+        width:0%;  
+    }
+}
+#bloc_page
+{
+    width: auto;
+    margin: auto;
+    display: block;
+    background-color: white;
+    
+}
+
+@media all and (max-width: 487px) 
+{
+    #bloc_page
+    {   
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1px;
+        margin-left: 1px;
+    }
+}
+
+
+
+
+/*header*/
+header
+{
+    display:flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 30px;
+    padding-top: 20px;
+
+}
+#titre_pincipal
+{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+header h1
+{
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bolder;
+
+   
+}
+
+header h2
+{
+    font-size: 0.85em;
+    font-weight: 500;
+   
+}
+
+
+/* div carte*/
+
+
+div .carte
+{
+    padding-top: 15px;
+}
+
+div button 
+{
+    
+   
+    font-size: 1.1em;
+    border-width: 1px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px 0px 0px 15px;
+    border-color: white;
+    border-style: none;
+
+}
+div button i
+{
+    font-size: 1em;
+}
+
+.carte .recherche
+{
+    
+    background-color: #0065fc;
+    font-size: 1.3em;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0px 15px 15px 0px;
+  
+}
+.carte input 
+{
+    font-weight:600;
+    padding: 12.5px 15px 11px 10px;
+
+
+}
+
+
+
+.carte  .loupe
+{
+    display: none;
+}
+
+
+
+/*div filtres */
+
+.filtres
+{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 55em;
+
+
+}
+
+div input
+{
+    font-size: 0.9em;
+    border-width: 0px; 
+    padding: 10px 15px 5px 15px;
+    margin: -5px;
+
+}
+
+span button
+{
+   
+    color: black;
+    font-weight:600;
+    font-size: 0.9em;
+    border-radius: 30px;
+    padding: 1px 20px 1px 0px;
+    margin: 14px;
+    background-color: white;
+    border-color: rgb(217, 217, 243);
+    border-style:double;
+
+}
+span button:hover
+{
+    color: blue;
+    border-top: 1.5px solid #0065FC;
+   
+}
+
+
+span i
+{
+    color: #0065fc;
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    border: 6px solid #DEEBFF;
+    padding: 10px 10px 10px 10px;
+    
+
+    
+}
+
+.info
+{
+    background-color: white;
+}
+.info button
+{
+   
+   background-color: white;
+   border-radius: 15px;
+   font-size: 1px;
+   
+}
+.info i
+{
+   color: #0065fc;
+   font-size: 0.6em;
+   border-radius: 30px;
+
+}
+.info button
+{
+    font-size: 1em;
+    padding: 3px 9px 3px 9px;
+    border-color: rgb(217, 217, 243);
+    border-style:double;
+
+}
+.info  p
+{
+    font-size: 0.8em;
+    
+}
+
+@media all and (max-width: 487px) 
+{
+    header
+    {  
+        
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: -10%;
+        padding-left: 10px;
+        margin-left: 10px;
+        width: 90%;
+        height: auto;
+        border-top: 4px solid whitesmoke;
+
+    }
+    
+   
+    header h1
+    {
+       width: 100%;
+       display: flex;
+       text-align:left;
+       font-size: 1.5em;
+
+    }
+    header h2  
+    {
+        font-size: 1em;
+    }
+    div .carte
+    {
+        width: 110%;
+        padding-top: 20px;
+    }
+
+    .carte  .recherche
+    {
+    display: none;
+    } 
+    
+    .carte  .loupe    
+    {
+        display:initial;
+        background-color: #0065fc;
+        font-size: 1.3em;
+        color: white;
+        padding: 10px 15px 10px 15px;
+        border-radius: 12px 12px 12px 12px;
+      
+    }
+  
+
+
+
+    
+    div .filtres
+    {
+        display: flex;
+        flex-direction:column;
+        margin-top: 30px;
+        margin-left: -10px;
+        width: 20em;
+    
+
+    }
+
+    div.filtres strong
+    {
+        margin-left: 20px;
+    }
+    
+    .info
+    {
+        width: 60%;
+        display: flex;
+        font-size: 1em;
+    }
+    .info i
+    {
+       color: #0065fc;
+       font-size: 0.6em;
+    
+    }
+    .info button 
+    {
+        border-radius: 20px 20px 20px 20px;
+        width: 5%;
+        height: 70%;
+    }
+
+
+
+}
+
+
+/*Navigation*/
+
+nav
+{
+    width: auto;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: 10px;
+}
+
+
+#logo img
+{   
+   
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+
+
+nav ul
+{   
+    float: right;
+    display: flex;
+    font-size: 0.80em;
+    list-style-type: none;
+    margin: 5%;
+    padding-right: 15%;
+    margin-top: -38px;
+
+
+
+}
+
+
+nav li
+{
+    margin-left: 1%;
+    padding-left: 1%;
+    margin-right: 30%;
+    
+    
+    
+}
+nav a
+{
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.inscrire
+{
+    float:right;
+    font-size: 0.90em;
+    color: #0065FC;
+    font-weight: 500;
+    padding-right: 0%;
+    margin-right: -33%;
+    margin-top: -2.6%;
+
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    padding-top: 3.6em;
+    border-top: 3px solid #0065FC;
+}
+
+
+
+
+
+@media all and (max-width: 487px) 
+{
+
+    
+
+    nav 
+    {
+        width: 50%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0%;
+        padding-bottom: 20%;
+        padding-top: 1%;
+    }
+    #logo img
+    {
+        margin-top: 1px;
+
+    }
+   
+    
+    nav ul 
+    {
+        width: 70%;
+        height: 10px;
+        padding-top: 42%;
+        margin-left: -70%;
+        
+    }
+
+   
+   
+
+    nav li
+    {
+        
+        font-size: 1.2em;
+        padding: 30px;
+     
+
+    }
+
+    li a 
+    {
+        color: black;
+        float: right;
+        text-align: right;
+    }
+     div .inscrire
+    {
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 10%;
+        margin-right: -100px;
+        padding-left: 40%;
+    }
+ 
+    
+   
+         
+    nav a:hover
+    {
+    border-bottom: 3px solid #0065FC;
+    padding: 0.1em 0 0.1em 0;
+    border-top:none;
+    }
+}
+
+
+/*main*/
+
+/*section hébergements*/
+
+ #hebergements 
+{
+    float: left;
+    text-align: center;
+    justify-content: center;
+    width: 710px;
+    height: 490px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    text-align: left;
+    margin: 0px 0px 0px 40px;
+    padding: 30px;
+    margin-top: -30px; 
+    padding-right:10px ;   
+    /*
+    width: 300px;
+    height: 500px; */
+    
+
+}
+
+h1
+{
+    display: grid ;
+    font-size:  1.3em;
+    padding: 1px;
+    margin: 1px;
+    
+   
+
+} 
+.bloc
+{
+    float: left;
+    border-radius: 15px;
+    width: 215px;
+    height: 180px;
+    text-align: left;
+    font-size: medium;
+    background-color: white;
+    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    margin-top: 25px;
+    padding: 1px 1px 1px 1px;
+    
+
+}
+
+
+#bloc_1
+{
+    
+    margin-right: 10px;
+    display: flex;
+    align-content: space-between;
+}
+
+#bloc_2
+{
+    margin-right: 10px;
+    display: flex;
+    align-content: space-between;
+}
+
+#bloc_3
+{
+    margin-right: 10px;
+    display: flex;
+    align-content: space-between;
+ 
+}
+
+#bloc_4
+{
+    margin-right: 10px;
+    display: flex;
+    align-content: space-between;
+ 
+}
+
+#bloc_5
+{
+    margin-right: 10px;
+    display: flex;
+    align-content: space-between;
+ 
+}
+
+#bloc_6
+{
+    margin-right: 10px;
+    display: flex;
+    align-content: space-between;
+ 
+}
+
+
+.full
+{
+    display: block;
+    justify-content: center;
+    text-align: right;
+    width: 210px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 0px;
+    margin-top: -8px;
+    margin-left: -10px;
+
+}
+
+
+
+#hebergements h2
+{
+    font-size: 0.80em;
+    padding-left: 10px;
+}
+
+#hebergements p
+{
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+#hebergements  i
+{
+    font-size: 9px;
+    color: blue;
+    
+}
+
+/* style="color: #F2F2F2"> */
+
+#hebergements  #star1  
+{
+    color: #F2F2F2;
+}
+#hebergements   #star2 
+{
+    color: #F2F2F2;
+}
+#hebergements  #star3  
+{
+    color: #F2F2F2;
+}
+#hebergements   #star4 
+{
+    color: #F2F2F2;
+}
+#hebergements  #star5  
+{
+    color: #F2F2F2;
+}
+
+#hebergements h3
+{
+    display: inline-table;
+    padding: 10px;
+    font-size: 0.8em;
+    padding-top: 1px;
+}
+
+
+
+
+/*section populaires*/
+
+
+#populaires
+{
+    float: left;
+    width: 310px;
+    height: 490px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0px 0px 0px 40px;
+    margin-top: -30px;    
+
+
+}
+
+#populaires h2
+{
+    display:flex;
+    
+    text-align: left;  
+    font-size: 0.80em;
+    padding: 4px;
+    margin: 4px;
+    padding-right: 0px;
+    padding-top: 10px;
+}
+
+#populaires span i
+{
+    float: right;
+    display: table-cell;
+    color: black;
+    font-size: 20px;
+    margin-top: -35px;
+    background-color: #F2F2F2;
+    border: #F2F2F2;
+}
+
+.carre
+{
+    
+    border-radius: 20px;
+    width: 90%;
+    height: 106px;
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    
+
+}
+
+
+#populaires img
+{
+    float: left;
+    width: 43%;
+    height: 100px;
+    object-fit: cover;
+    margin: 5px;
+    margin-top: 2px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 1px 15px 1px 10px;
+    
+}
+
+#populaires p
+{
+    text-align: left;
+    font-size: 11px;
+    font-weight:normal;
+    margin-right: 0px;
+
+}
+
+#populaires p i
+{
+  
+    text-align:right;
+    color: #0065FC;
+    font-size: 9px;
+    padding-right: 0px;
+    padding-top: 12px;
+
+}
+#populaires  #star_1  
+{
+    color: #F2F2F2;
+}
+#populaires    #star_2
+{
+    color: #F2F2F2;
+}
+
+
+
+@media all and (max-width: 487px) 
+{
+    main
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+    }
+    #hebergements
+    {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 15px;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        padding-left: 10px;
+        
+        
+    }
+    .bloc
+    {
+        width: 350px;
+        height: 180px;
+        padding-left: 0px;
+
+    }
+    #hebergements section img  
+    {
+        width: 350px;
+        height: 120px;
+    }
+    #hebergements h1
+    {
+        font-size: 1.5em;
+    }
+    #hebergements h2
+    {
+        font-size: 1em;
+        margin-top: -10px;
+    }
+    #hebergements p 
+    {
+        font-size: 0.8em;
+        margin-top: -10px;
+
+    }
+    
+    
+    /*section populaires*/
+
+    
+    
+    #populaires
+    {
+        width: 105%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        border-radius: 0px;
+        padding-left: 0px;
+    }
+    #populaires h1
+    {
+        font-size: 1.5em;
+        padding-left: 40px;
+    }
+
+    .carre
+    {
+        width: 90%;
+        height: 140px;
+        margin-left: 30px;
+        
+
+
+    }
+    #populaires img
+    {
+      
+        width: 120px ;
+        height: 130px;
+        margin-top: -10px;
+    }
+    #populaires p
+    {
+        
+         text-align: left;
+         font-size: 0.8em;
+         padding-right: 80px;
+    }
+    #populaires h2
+    {
+         text-align: left;
+         font-size: 1em;
+         padding-right: 20px;
+         padding-top: 0px;
+
+   
+    }
+    #populaires span i
+    {
+        padding-right: 40px;
+    }
+    
+}
+
+
+
+
+/* Section Activités à Marseille*/
+
+
+article
+{
+    width: 93%;
+    display:inline-block;
+    text-align: center;
+    padding: 20px;
+    margin: 0px 0px 0px 20px;
+    background-color:white;
+}
+
+
+ h2
+{
+    text-align: left;
+    font-size: 1.3em;
+    color: black;
+}
+
+
+#promenade_1
+{
+    display: table-cell;
+
+
+}
+
+.paysage
+{
+    float: left;
+    justify-content: space-between;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    
+    
+}
+.paysage img
+{
+    border-radius: 20px 20px 0px 0px;
+}
+
+h3
+{
+    padding-left: 15px;
+    font-size: 0.9em;
+
+}
+
+#paysage_1
+{
+    width: 280px;
+    height: 390px;
+    background-color: white;
+}
+#paysage_1 img
+{
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+
+}
+
+
+#paysage_2
+{
+    background-color: white;
+    width: 250px;
+    height: 200px;
+}
+
+#paysage_2 img
+{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    
+}
+
+#paysage_3
+{
+    width: 250px;
+    height: 170px;
+    background-color: white;
+}
+
+#paysage_3 img
+{
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+#promenade_2
+{
+    
+    display: table-cell;
+    
+}
+
+
+#paysage_4
+{
+    display: flex;
+    text-align: left;
+    width: 280px;
+    height: 390px;
+    background-color:white;
+}
+#paysage_4 img
+{
+    
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+
+}
+
+#paysage_5
+{
+    
+    width: 250px;
+    height: 160px;
+    background-color: white;
+}
+
+
+
+#paysage_5 img
+{
+    width: 250px;
+    height: 110px;
+    object-fit: cover;
+
+}
+
+
+#paysage_6
+{
+    width: 250px;
+    height: 210px;
+    background-color: white;
+}
+
+#paysage_6 img
+{
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+
+    
+}
+
+@media all and (max-width: 487px) 
+{
+    article
+    {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1px;
+        padding-top: 1px;
+
+    }
+
+    article h1
+    {
+        font-size: 1.5em;
+        padding-left: 10px;
+    }
+    article h2
+    {
+        padding-left: 15px;
+        font-size: 0.9em;
+
+
+    }
+
+    #paysage
+    {
+        width: 100%;
+    }
+
+    #paysage_1
+    {
+        width: 350px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_1 img
+    {
+    width: 350px;
+    height: 140px;
+    }
+    #paysage_2
+    {
+        width: 350px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_2 img
+    {
+    width: 350px;
+    height: 140px;
+    }
+    #paysage_3
+    {
+        width: 350px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_3 img
+    {
+    width: 350px;
+    height: 140px;
+    }
+    #paysage_4
+    {
+        width: 350px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_4 img
+    {
+    width: 350px;
+    height: 140px;
+    }
+    #paysage_5
+    {
+        width: 350px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_5 img
+    {
+    width: 350px;
+    height: 140px;
+    }
+    #paysage_6
+    {
+        width: 350px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_6 img
+    {
+    width: 350px;
+    height: 140px;
+    }
+
+
+
+   
+}
+
+/*footer*/
+
+footer
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    text-align:left;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    margin-top: 30px;
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+    margin: 10px 0px 0px 0px;
+
+}
+
+
+
+div .fin
+{
+  
+
+        margin: auto;
+        font-size: 0.90em;
+        margin-left: 1px;
+        padding-left: 1px;
+
+}
+
+
+
+ul
+{
+    float: left;
+    text-align: left;
+    list-style: none;
+    margin-left: 50px; 
+    padding: 0px;
+    
+}
+
+li
+{
+    padding: 5px;
+}
+
+
+@media all and (max-width: 487px) 
+
+{
+    footer
+    { 
+        width: 112%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    div .fin
+     {
+    
+    font-size: 1em;
+
+    }
+}
