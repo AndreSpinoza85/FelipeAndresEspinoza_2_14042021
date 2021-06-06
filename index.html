@@ -12,51 +12,69 @@
     </head>
     <body>
        <div id="bloc_page">
-                <nav>
-                    <div id="logo">
-                        <img src="images/logo/Reservia.svg" alt="Logo de Reservia">
-                    </div>
+           <header>
+               <div id="logo">
+                  <img src="images/logo/Reservia.svg" alt="Logo de Reservia">
+               </div>
+             <nav>     
                               <ul>
-                                 <li><a href="#hebergements">Hébergements</a></li>
-                                 <li><a href="#activites">Activités</a></li>
-                                 <li id="inscription"><a href="#insciption">S'inscrire</a></li>
-                                
+                                 <li>
+                                     <a href="#hebergements" title="Hébergements" >Hébergements</a>
+                                </li>
+                                 <li>
+                                     <a href="#activites" title="Activités">Activités</a>
+                                </li>                           
                              </ul>
                                 <span class="inscrire">S'inscrire</span>
-                </nav>
-                <header>
+             </nav>
+            </header>
+                <section class="intro">
                     <div id="titre_principal">
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                            <h2>En plein centre ville ou en pleine nature</h2>
+                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                            <h3>En plein centre ville ou en pleine nature</h3>
                     </div>
                            
-                    <div class="carte">
+                    <form class="carte">
                             <button><i class="fas fa-map-marker-alt"></i></button>
                               <input type="text" name="ville" id="ville"
                                value=" Marseille, France"/>
-                           <button class="recherche"> Rechercher</button>    
+                           <button class="recherche">Rechercher</button>    
                            <button class="loupe"><i class="fas fa-search"></i></button>
-                    </div>
+                    </form>
                     <div class="filtres"> 
                         <strong>Filtres</strong>
-                             <span> 
-                                   <button><i class="fas fa-money-bill-wave"></i> Économique</button>
-                             </span>
-                             <span>
-                                 <button><i class="fas fa-child"></i> Familial</button>
-                                </span> 
-                                <span>
-                                 <button><i class="fas fa-heart"></i> Romantique</button>
-                                </span>
-                                <span>
-                                 <button><i class="fas fa-dog"></i> Animaux autorisés</button>
+                              <span>
+                                   <label>
+                                       <i class="fas fa-money-bill-wave"></i>
+                                      <button>Économique</button>
+                                    </label>
+                            </span>
+                            <span>
+                                 <label>
+                                     <i class="fas fa-child"></i>
+                                     <button>Familial</button>
+                                 </label>
+                            </span> 
+                            <span>
+                                 <label>
+                                     <i class="fas fa-heart"></i>
+                                     <button>Romantique</button>
+                                </label> 
+                            </span>
+                            <span>
+                                    <label>
+                                        <i class="fas fa-dog"></i>
+                                        <button>Animaux autorisés</button>
+                                    </label>
                                 </span> 
                     </div>
                     <div class="info">
-                           <p><button><i  class="fas fa-info"></i></button>Plus de 500 logements sont disponibles dans cette ville</p>
+                            <p>
+                               <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+                            </p>
                     </div>
-                </header>
-                  <!--Section: hébergements-->
+                </section>
+                    <!--Section: hébergements-->
                 <main>
                     <div id="hebergements">
                       <h1>Hébergements à Marseille</h1>
@@ -142,7 +160,9 @@
                                             
                                 </section>
                             </div>
-                                                  <h3>Afficher plus</h3>
+                                    <a href="Afficher">
+                                        <h3>Afficher plus</h3>
+                                    </a>
                       </div>
                             <!--Section: Les plus populaires-->
                       <div id="populaires">
@@ -234,29 +254,34 @@
                    </article> 
                 
                     <footer>
-                        <div class="fin" >
+                        <div class="fin_1">
+                            <h2>A propos</h2>
+                            <a href="#">
                             <ul>
-                                <li><strong>A propos</strong>  </li>
-
                                 <li>Foncionnement du site</li>
                                 <li>Conditions générales de vente</li>
                                 <li>Données et confidentialité</li>
                             </ul>
+                           </a>
                         </div>
 
-                        <div class="fin" >
+                        <div class="fin_2">
+                            <h2>Nos Hébergements</h2>
+                            <a href="#">
                             <ul>
-                                <li><strong>Nos Hébergements</strong>  </li>
                                 <li>Charte qualité</li>
                                 <li>Soumettre votre hôtel</li>
                             </ul>
+                           </a>
                         </div>
-                        <div class="fin" >
+                        <div class="fin_3">
+                            <h2>Assistance</h2>
+                            <a href="#">
                             <ul>
-                                <li><strong>Assistance</strong></li>
                                 <li>Centre d'aide</li>
                                 <li>Nous contacter</li>
                             </ul>
+                          </a>
                         </div>
                 </footer>
             </div>
