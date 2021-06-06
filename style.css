@@ -5,15 +5,6 @@ body
     font-family: 'Raleway', sans-serif;
     background-color: #ffff;
     display: grid;
-   
-}
-
-@media screen and (max-width: 487px) 
-{
-    body
-    {
-        width:100%;  
-    }
 }
 #bloc_page
 {
@@ -21,27 +12,67 @@ body
     margin: auto;
     display: block;
     background-color: white;
-    
+}
+/* Header */
+#logo img
+{   
+   
+    padding-left: 3.5%;
+    margin-left: 0%;
+    margin-top: 20px;
 }
 
-@media screen and (max-width: 487px) 
+/*Navigation*/
+nav
 {
-    #bloc_page
-    {   
-        width: 90%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding-left: 1px;
-        margin-left: 1px;
-    }
+    width: auto;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 0%;
+    margin-left: 2%;
+    padding-right: 2%;
 }
 
+nav ul
+{   
+    float: right;
+    display: flex;
+    font-size: 90%;
+    list-style-type: none;
+    margin: 5%;
+    padding-right: 12%;
+    margin-top: -3%;
+}
+nav li
+{
+    margin-left: 1%;
+    padding-left: 1%;
+    margin-right: 30%;
+}
+nav a
+{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
 
-
-
-/*header*/
-header
+div .inscrire
+{
+    float: right;
+    margin-right: -35%;
+    margin-top: -2.7%;
+    color: blue;
+    font-weight: bolder;
+}
+nav a:hover
+{
+    color: #0065FC;
+    padding-top: 3em;
+    border-top: 5px solid #0065FC;
+}
+/*section .intro*/
+.intro
 {
     display:flex;
     flex-direction: column;
@@ -55,55 +86,38 @@ header
 
     display: flex;
     flex-direction: column;
-    
 }
-
-
-
-
-header h1
+.intro h2
 {
-    font-size: 1.3em;
+    font-size: 1.35em;
     text-align: left;
     margin-top: 20px;
     font-weight: bolder;
-
-   
 }
-
-header h2
+.intro h3
 {
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: 500;
-   
+    margin-left: -2%;   
 }
-
-
 /* div carte*/
-
-
 div .carte
 {
     padding-top: 15px;
 }
-
 div button 
-{
-    
-   
+{   
     font-size: 1.1em;
     border-width: 1px;
     padding: 10px 15px 10px 15px;
     border-radius: 15px 0px 0px 15px;
     border-color: white;
     border-style: none;
-
 }
 div button i
 {
     font-size: 1em;
 }
-
 .carte .recherche
 {
     
@@ -112,67 +126,87 @@ div button i
     color: white;
     padding: 10px 15px 10px 15px;
     border-radius: 0px 15px 15px 0px;
-  
 }
-.carte input 
+.carte .recherche:hover
 {
-    font-weight:600;
-    padding: 12.5px 15px 11px 10px;
-
-
+    background: rgb(217, 217, 243);
+    color: black;
+    cursor: pointer;
 }
-
-
-
-.carte  .loupe
-{
-    display: none;
-}
-
-
-
-/*div filtres */
-
-.filtres
-{
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 55em;
-
-
-}
-
 div input
 {
     font-size: 0.9em;
     border-width: 0px; 
     padding: 10px 15px 5px 15px;
     margin: -5px;
-
+}
+.carte input 
+{
+    font-weight:600;
+    padding: 12.5px 15px 11px 10px;
+}
+.carte  .loupe
+{
+    display: none;
+}
+/*div filtres */
+.filtres
+{
+    margin-top: 5%;
+    margin-left: 1%;
+    width: 140%;
 }
 
-span button
+ label
 {
-   
     color: black;
     font-weight:600;
-    font-size: 0.9em;
+    font-size: 1em;
     border-radius: 30px;
-    padding: 1px 20px 1px 0px;
-    margin: 14px;
+    padding: 13px 13px 13px 23px;
+    margin: 1%;
+    margin-left: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: white;
-    border-color: rgb(217, 217, 243);
-    border-style:double;
+    border:  1px solid rgb(217, 217, 243);
+}
+span
+{
+    padding-left: 1%;
+  
+}
+span a
+{
+    text-decoration: none;
+}
+span label:hover
+{
+    color: #ffff;
+    background: #0065FC;
+    border:solid 1px rgb(217, 217, 243);
+    cursor: pointer;
 
+}
+span button
+{
+    color: black;
+    font-weight:600;
+    font-size: 1em;
+    border-radius: 30px;
+    padding: 3px 3px 3px 3px;
+    margin: 1%;
+    margin-left: 1%;
+    background-color: white;
+    border: none;
 }
 span button:hover
 {
-    color: blue;
-    border-top: 1.5px solid #0065FC;
-   
+    color: #ffff;
+    background: #0065FC;
+    cursor: pointer;
+
 }
-
-
 span i
 {
     color: #0065fc;
@@ -180,309 +214,40 @@ span i
     background-color: #DEEBFF;
     border: 6px solid #DEEBFF;
     padding: 10px 10px 10px 10px;
-    
-
-    
+    margin-left: -21px;
+    padding-left: 1%;
 }
-
 .info
 {
     background-color: white;
+
 }
-.info button
-{
-   
-   background-color: white;
-   border-radius: 15px;
-   font-size: 1px;
-   
-}
+
 .info i
 {
    color: #0065fc;
-   font-size: 0.6em;
-   border-radius: 30px;
+   font-size: 0.8em;
+   padding: 0.50em 0.65em 0.50em 0.65em;
+   margin-right: 1%;
+   border: 2px solid #F2F2F2;
+   border-radius: 100%;
 
 }
-.info button
-{
-    font-size: 1em;
-    padding: 3px 9px 3px 9px;
-    border-color: rgb(217, 217, 243);
-    border-style:double;
 
-}
 .info  p
 {
-    font-size: 0.8em;
-    
+    font-size: 0.9em;
 }
-
-@media screen and (max-width: 487px) 
-{
-    header
-    {  
-        
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-top: -10%;
-        margin-right: 0%;
-        margin-left: 0%;
-        width: 96%;
-        height: auto;
-        border-top: 4px solid whitesmoke;
-
-    }
-    
-   
-    header h1
-    {
-       width: 100%;
-       display: flex;
-       text-align:left;
-       font-size: 1.5em;
-
-    }
-    header h2  
-    {
-        font-size: 1em;
-    }
-    div .carte
-    {
-        width: 110%;
-        padding-top: 20px;
-    }
-
-    .carte  .recherche
-    {
-    display: none;
-    } 
-    
-    .carte  .loupe    
-    {
-        display:initial;
-        background-color: #0065fc;
-        font-size: 1.3em;
-        color: white;
-        padding: 10px 15px 10px 15px;
-        border-radius: 12px 12px 12px 12px;
-        
-      
-    }
-  
-
-
-
-    
-    div .filtres
-    {
-        display: flex;
-        flex-direction:column;
-        margin-top: 30px;
-        margin-left: -10px;
-        width: 20em;
-    
-
-    }
-
-    div.filtres strong
-    {
-        margin-left: 20px;
-    }
-    
-    .info
-    {
-        width: 60%;
-        display: flex;
-        font-size: 1em;
-    }
-    .info i
-    {
-       color: #0065fc;
-       font-size: 0.6em;
-    
-    }
-    .info button 
-    {
-        border-radius: 20px 20px 20px 20px;
-        width: 5%;
-        height: 70%;
-    }
-
-
-
-}
-
-
-/*Navigation*/
-
-nav
-{
-    width: auto;
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-left: 0%;
-    margin-left: 2%;
-    padding-right: 2%;
-}
-
-
-#logo img
-{   
-   
-    padding-left: 1%;
-    margin-left: 0%;
-    margin-top: 30px;
-}
-
-
-
-
-nav ul
-{   
-    float: right;
-    display: flex;
-    font-size: 90%;
-    list-style-type: none;
-    margin: 5%;
-    padding-right: 12%;
- 
-    margin-top: -3%;
-
-
-
-}
-
-
-nav li
-{
-    margin-left: 1%;
-    padding-left: 1%;
-    margin-right: 30%;
-    
-    
-    
-}
-nav a
-{
-    width: 100%;
-    color: black;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-#inscription
-{
-    color: yellow;
-}
-
-div .inscrire
-{
-    display: none;
-}
-
-
-nav a:hover
-{
-    color: #0065FC;
-    padding-top: 3.6em;
-    border-top: 5px solid #0065FC;
-}
-
-
-
-
-
-@media screen and (max-width: 487px) 
-{
-
-    
-
-    nav 
-    {
-        width: 50%;
-        height: 60px;
-        display: flex;
-        flex-direction: row;
-        padding-left: 0%;
-        padding-bottom: 20%;
-        padding-top: 1%;
-    }
-    #logo img
-    {
-        margin-top: 1%;
-        margin-left: 15%;
-
-    }
-   
-    
-    nav ul 
-    {
-        width: 70%;
-        height: 10px;
-        padding-top: 25%;
-        margin-left: -50%;
-        
-    }
-
-   
-   
-
-    nav li
-    {
-        
-        font-size: 1.2em;
-        padding: 30px;
-     
-
-    }
-
-    li a 
-    {
-        color: black;
-        float: right;
-        text-align: right;
-    }
-    #inscription
-    {
-        display: none;
-    }
-
-     div .inscrire
-    {
-        display: block;
-        font-size: 1em;
-        font-weight: bold;
-        margin-top: 10%;
-        margin-right: -100px;
-        padding-left: 50%;
-        color: #0065FC;
-
-    }
- 
-    
-   
-         
-    nav a:hover
-    {
-    border-bottom: 3px solid #0065FC;
-    padding: 0.1em 0 0.1em 0;
-    border-top:none;
-    }
-}
-
 
 /*main*/
 main
 {
     display: flex;
     margin-right: 5%;
-    
 }
 
 /*section hébergements*/
-
- #hebergements 
+#hebergements 
 {
     float: left;
     text-align: center;
@@ -496,22 +261,13 @@ main
     padding: 30px;
     margin-top: -30px; 
     padding-right:10px ;   
-    /*
-    width: 300px;
-    height: 500px; */
-    
-
 }
-
 h1
 {
     display: grid ;
-    font-size:  1.3em;
+    font-size: 1.3em;
     padding: 1px;
     margin: 1px;
-    
-   
-
 } 
 .bloc
 {
@@ -526,14 +282,12 @@ h1
     margin-top: 25px;
     padding: 1px 1px 1px 1px;
     margin-left: 1.5%;
-    
-
+    cursor: pointer;
 }
-
-
-
-
-
+.bloc:hover
+{
+    background:  rgb(217, 217, 243);
+}
 .full
 {
     display: block;
@@ -547,30 +301,22 @@ h1
     margin-top: -8px;
     margin-left: -5px;
 }
-
-
-
 #hebergements h2
 {
-    font-size: 0.80em;
+    font-size: 90%;
     padding-left: 10px;
 }
-
 #hebergements p
 {
-    font-size: 10px;
+    font-size: 80%;
     padding-left: 10px;
 }
-
 #hebergements  i
 {
     font-size: 80%;
     color: #0065fc;
-    
 }
-
 /* style="color: #F2F2F2"> */
-
 #hebergements  #star1  
 {
     color: #F2F2F2;
@@ -591,39 +337,33 @@ h1
 {
     color: #F2F2F2;
 }
-
 #hebergements h3
 {
     display: inline-table;
     padding: 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding-top: 1px;
+    color: black;
 }
-
-
-
-
+#hebergements h3:hover
+{
+    color:  #0065FC;
+}
 /*section populaires*/
-
-
 #populaires
 {
     float: left;
     width: 25%;
-    height: 500px;
+    height: 540px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
     margin: 0px 0px 0px 40px;
     margin-top: -30px;    
-
-
 }
-
 #populaires h2
 {
     display:flex;
-    
     text-align: left;  
     font-size: 80%;
     padding: 4px;
@@ -631,7 +371,6 @@ h1
     padding-right: 0px;
     padding-top: 10px;
 }
-
 #populaires span i
 {
     float: right;
@@ -643,26 +382,25 @@ h1
     background-color: #F2F2F2;
     border: #F2F2F2;
 }
-
 .carre
-{
-    
+{    
     border-radius: 20px;
     width: 90%;
     height: 24%;
     background-color: white;
     margin-top: 30px;
     box-shadow: 0px 3px 0px rgb(218, 210, 210);
-    
-
+    cursor: pointer;
 }
-
-
+.carre:hover
+{
+    background:  rgb(217, 217, 243);
+}
 #populaires img
 {
     float: left;
     width: 43%;
-    height: 115px;
+    height: 125px;
     object-fit: cover;
     margin: 5px;
     margin-top: 2px;
@@ -670,27 +408,21 @@ h1
     margin-bottom: 20px;
     border-radius: 20px 0px 0px 20px;
     padding: 1px 15px 1px 10px;
-    
 }
-
 #populaires p
 {
     text-align: left;
-    font-size: 60%;
+    font-size: 80%;
     font-weight:normal;
     margin-right: 0px;
-
 }
-
 #populaires p i
-{
-  
+{  
     text-align:right;
     color: #0065FC;
     font-size: 80%;
     padding-right: 0px;
     padding-top: 0%;
-
 }
 #populaires  #star_1  
 {
@@ -701,7 +433,373 @@ h1
     color: #F2F2F2;
 }
 
+/* Section Activités à Marseille*/
+article
+{
+    width: 95%;
+    display:inline-block;
+    text-align: center;
+    padding: 20px;
+    padding-left: 2%;
+    margin: 0px 0px 0px 20px;
+    background-color:white;
+}
+ h2
+{
+    text-align: left;
+    font-size: 1.3em;
+    color: black;
+}
+#promenade_1
+{
+    display: table-cell;
+}
+.paysage
+{
+    float: left;
+    justify-content: space-between;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    cursor: pointer;
+   
+}
+.paysage:hover
+{
+    color: #0065FC;
+}
 
+.paysage img
+{
+    border-radius: 20px 20px 0px 0px;
+}
+h3
+{
+    padding-left: 15px;
+    font-size: 0.9em;
+}
+#paysage_1
+{
+    width: 46%;
+    height: 390px;
+    background-color: white;
+}
+#paysage_1 img
+{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+#paysage_2
+{
+    background-color: white;
+    width: 45%;
+    height: 200px;
+}
+#paysage_2 img
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+#paysage_3
+{
+    width: 45%;
+    height: 170px;
+    background-color: white;
+}
+
+#paysage_3 img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+#promenade_2
+{    
+    display: table-cell;
+}
+#paysage_4
+{
+    display: flex;
+    text-align: left;
+    width: 45%;
+    height: 390px;
+    background-color:white;
+}
+#paysage_4 img
+{ 
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+#paysage_5
+{
+    width: 40%;
+    height: 160px;
+    background-color: white;
+}
+#paysage_5 img
+{
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+#paysage_6
+{
+    width: 40%;
+    height: 210px;
+    background-color: white;
+}
+
+#paysage_6 img
+{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+
+
+/*footer*/
+
+footer
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    text-align:left;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    margin-top: 30px;
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+    margin: 10px 0px 0px 0px;
+}
+
+div .fin
+{
+        margin: auto;
+        font-size: 0.90em;
+        margin-left: 1px;
+        padding-left: 1px;
+}
+footer h2
+{
+    font-size: 1em;
+    font-weight: bolder;
+    margin-left: 25%;
+}
+ul
+{
+    float: left;
+    text-align: left;
+    list-style: none;
+    margin-left: 50px; 
+    padding: 0px;
+    color: black;
+}
+li
+{
+    padding: 5px;
+}
+footer .fin_1, .fin_2, .fin_3
+{
+    margin: 1%;
+    margin-left: 9%;
+}
+footer li:hover
+{
+    color: blue;
+}
+
+
+
+/* Media queries: 487px */
+
+@media screen and (max-width: 487px) 
+{
+    body
+    {
+        width: 80%;
+          
+    }
+}
+@media screen and (max-width: 487px) 
+{
+    #bloc_page
+    {   
+        width: 74.5%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1px;
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width: 487px) 
+{
+    header
+    {
+        width: 160%;
+        height: 145px;
+        padding-bottom: 1px;
+        border-bottom: 4px solid whitesmoke;
+
+
+
+    }
+      
+   nav 
+    {
+        width: 60%;
+        height: 50px;
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        padding-left: 30%;
+        padding-bottom: 20%;
+        padding-top: 1%;
+
+    }
+    #logo img
+    {
+        margin-top: 3%;
+        margin-left: 5%;
+
+    }   
+    nav ul 
+    {
+        width: 70%;
+        height: 10px;
+        padding-top: 10%;
+        margin-left: -50%;
+
+        
+    }
+    nav li
+    {     
+        font-size: 1.2em;
+        padding: 30px;
+
+
+    }
+
+    li a 
+    {
+        color: black;
+        float: right;
+        text-align: right;
+    }
+    #inscription
+    {
+        display: none;
+    }
+
+     div .inscrire
+    {
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: -13%;
+        padding-left: 10%;
+        color: #0065FC;
+        cursor: pointer;
+    }        
+    nav a:hover
+    {
+    border-bottom: 4px  solid #0065FC;
+    padding: 0.1em 0 0.1em 0;
+    border-top:none;
+    }
+}
+@media screen and (max-width: 487px) 
+{
+    .intro
+    {         
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: -10%;
+        margin-right: 0%;
+        padding-left: 3%;
+        width: 110%;
+        height: auto;
+    }
+    .intro h2
+    {
+       width: 120%;
+       display: flex;
+       text-align:left;
+       font-size: 1.4em;
+
+    }
+    .intro h3 
+    {
+        font-size: 1em;
+        width: 120%;
+    }
+    div .carte
+    {
+        width: 140%;
+        padding-top: 5%;
+    }
+
+    .carte  .recherche
+    {
+    display: none;
+    } 
+    
+    .carte  .loupe    
+    {
+        display:initial;
+        background-color: #0065fc;
+        font-size: 1.3em;
+        color: white;
+        padding: 10px 15px 10px 15px;
+        border-radius: 12px 12px 12px 12px;    
+    }
+    .carte .loupe:hover
+    {
+        background: rgb(217, 217, 243);
+        color: #0065fc;
+        cursor: pointer;   
+    }
+
+    .filtres
+    {
+        display: flex;
+        flex-direction:column;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .filtres button 
+    {
+        margin-top: 5%;
+    }
+
+    
+    .info
+    {
+        width: 120%;
+        display: flex;
+        font-size: 1em;
+        margin-top: 7%;
+    }
+    
+    .info i
+    {
+       color: #0065fc;
+       font-size: 0.8em; 
+    }
+    
+}
 
 @media screen and (max-width: 487px) 
 {
@@ -711,11 +809,10 @@ h1
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
-
     }
     #hebergements
     {
-        width: 90%;
+        width: 130%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -725,20 +822,19 @@ h1
         justify-content: center;
         background-color: white;
         padding-left: 10px;
-        
-        
     }
     .bloc
     {
-        width: 350px;
+        width: 115%;
         height: 180px;
         padding-left: 0px;
 
     }
     #hebergements section img  
     {
-        width: 350px;
+        width: 100%;
         height: 120px;
+        padding-top: 2%;
     }
     #hebergements h1
     {
@@ -753,17 +849,12 @@ h1
     {
         font-size: 0.8em;
         margin-top: -10px;
-
     }
-    
-    
     /*section populaires*/
 
-    
-    
     #populaires
     {
-        width: 105%;
+        width: 160%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -776,27 +867,21 @@ h1
         font-size: 1.5em;
         padding-left: 40px;
     }
-
     .carre
     {
-        width: 90%;
+        width: 95%;
         height: 140px;
         margin-left: 30px;
-        
-
-
     }
     #populaires img
-    {
-      
+    {     
         width: 120px ;
         height: 130px;
         margin-top: -10px;
     }
     #populaires p
     {
-        
-         text-align: left;
+        text-align: left;
          font-size: 0.8em;
          padding-right: 80px;
     }
@@ -805,193 +890,28 @@ h1
          text-align: left;
          font-size: 1em;
          padding-right: 20px;
-         padding-top: 0px;
-
-   
+         padding-top: 0px;   
     }
     #populaires span i
     {
         padding-right: 40px;
-    }
-    
+    }  
 }
 
 
 
-
-/* Section Activités à Marseille*/
-
-
-article
-{
-    width: 95%;
-    display:inline-block;
-    text-align: center;
-    padding: 20px;
-    padding-left: 2%;
-    margin: 0px 0px 0px 20px;
-    background-color:white;
-}
-
-
- h2
-{
-    text-align: left;
-    font-size: 1.3em;
-    color: black;
-}
-
-
-#promenade_1
-{
-    display: table-cell;
-
-
-}
-
-.paysage
-{
-    float: left;
-    justify-content: space-between;
-    text-align: left;
-    padding: 5px;
-    margin: 5px;
-    padding-top: 5px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 0px rgb(218, 210, 210);
-    
-    
-}
-.paysage img
-{
-    border-radius: 20px 20px 0px 0px;
-}
-
-h3
-{
-    padding-left: 15px;
-    font-size: 0.9em;
-
-}
-
-#paysage_1
-{
-    width: 46%;
-    height: 390px;
-    background-color: white;
-}
-#paysage_1 img
-{
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
-
-}
-
-
-#paysage_2
-{
-    background-color: white;
-    width: 45%;
-    height: 200px;
-}
-
-#paysage_2 img
-{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    
-}
-
-#paysage_3
-{
-    width: 45%;
-    height: 170px;
-    background-color: white;
-}
-
-#paysage_3 img
-{
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-
-
-#promenade_2
-{
-    
-    display: table-cell;
-    
-}
-
-
-#paysage_4
-{
-    display: flex;
-    text-align: left;
-    width: 45%;
-    height: 390px;
-    background-color:white;
-}
-#paysage_4 img
-{
-    
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
-
-}
-
-#paysage_5
-{
-    
-    width: 40%;
-    height: 160px;
-    background-color: white;
-}
-
-
-
-#paysage_5 img
-{
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-
-}
-
-
-#paysage_6
-{
-    width: 40%;
-    height: 210px;
-    background-color: white;
-}
-
-#paysage_6 img
-{
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-
-    
-}
 
 @media screen and (max-width: 487px) 
 {
     article
     {
-        width: 70%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
         padding-left: 1px;
         padding-top: 1px;
-
     }
-
     article h1
     {
         font-size: 1.5em;
@@ -1001,8 +921,389 @@ h3
     {
         padding-left: 15px;
         font-size: 1.5em;
+    }
+
+    .paysage
+    {
+        margin-left: 3%;
+    }
+
+    #paysage_1
+    {
+        width: 155%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_1 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_2
+    {
+        width: 155%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_2 img
+    {
+        width: 100%;
+        height: 140px;
+    }
+    #paysage_3
+    {
+        width: 155%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_3 img
+    {
+        width: 100%;
+        height: 140px;
+    }
+    #paysage_4
+    {
+        width: 155%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_4 img
+    {
+        width: 100%;
+        height: 140px;
+    }
+    #paysage_5
+    {
+        width: 155%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_5 img
+    {
+        width: 100%;
+        height: 140px;
+    }
+    #paysage_6
+    {
+        width: 155%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_6 img
+    {
+        width: 100%;
+        height: 140px;
+    }   
+}
+@media screen and (max-width: 487px) 
+
+{
+    footer
+    { 
+        width: 160%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .fin_1, .fin_2, .fin_3
+    {
+    
+    font-size: 1.2em;
+    padding-left: 5%; 
+    }
+    footer .fin_1 h2, .fin_2 h2, .fin_3 h2
+    {
+        margin-left: 13%;
+    }
+    
+}
+
+/* Media queries: entre 487px et 768px */
+
+@media all and (min-width: 487px) and (max-width: 768px)
+{
+    body
+    {
+        width: 80%;
+          
+    }
+}
+@media all and (min-width: 487px) and (max-width: 768px)
+{
+    #bloc_page
+    {   
+        width: 55%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1px;
+        margin-left: 1px;
+    }
+}
+@media all and (min-width: 487px) and (max-width: 768px)
+{
+    header
+    {
+        width: 160%;
+        height: 145px;
+        padding-bottom: 1px;
 
 
+
+    }
+      
+   nav 
+    {
+        width: 40%;
+        height: 50px;
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        padding-left: 30%;
+        padding-bottom: 20%;
+        padding-top: 1%;
+
+    }
+    #logo img
+    {
+        margin-top: 3%;
+        margin-left: 1%;
+    }   
+    nav ul 
+    {
+       margin-top: -17%;     
+    }
+    nav li
+    {     
+        font-size: 1.2em;       
+    }
+    li a 
+    {
+        color: black;
+        float: right;
+        text-align: right;
+        margin-top: 1%;
+    }
+     div .inscrire
+    {
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: -14%;
+        padding-left: 40%;
+        color: #0065FC;
+        cursor: pointer;
+    }        
+    nav a:hover
+    {
+    border-top: 3px  #0065FC;
+    padding: 0px;
+    }
+}
+@media all and (min-width: 487px) and (max-width: 768px)
+{
+    .intro
+    {         
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: -10%;
+        margin-right: 0%;
+        padding-left: 3%;
+        width: 110%;
+        height: auto;
+    }
+    .intro h2
+    {
+       width: 140%;
+       display: flex;
+       text-align:left;
+       font-size: 1.4em;
+
+    }
+    .intro h3 
+    {
+        font-size: 1em;
+        width: 120%;
+    }
+    div .carte
+    {
+        width: 140%;
+        padding-top: 5%;
+    }  
+    .carte  .loupe    
+    {
+        display:none;
+        background-color: #0065fc;
+        font-size: 1.3em;
+        color: white;
+        padding: 10px 15px 10px 15px;
+        border-radius: 12px 12px 12px 12px;    
+    }
+    .carte .loupe:hover
+    {
+        background: rgb(217, 217, 243);
+        color: #0065fc;
+        cursor: pointer;   
+    }
+
+    .filtres
+    {
+        display: flex;
+        flex-direction:column;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .filtres button 
+    {
+        margin-top: 5%;
+    }
+
+    
+    .info
+    {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 7%;
+    }
+    
+    .info i
+    {
+       color: #0065fc;
+       font-size: 0.8em; 
+    }
+    
+}
+
+
+
+@media all and (min-width: 487px) and (max-width: 768px)
+{
+    main
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    #hebergements
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 0px;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        padding-left: 0px;
+    }
+    .bloc
+    {
+        width: 150%;
+        height: 300px;
+        margin-left: 90%;
+
+    }
+    #hebergements section img  
+    {
+        width: 100%;
+        height: 200px;
+    }
+    #hebergements h1
+    {
+        font-size: 2em;
+        margin-left: 90%;
+
+    }
+    #hebergements h2
+    {
+        font-size: 1.5em;
+        margin-top: -10px;
+    }
+    
+    #hebergements p 
+    {
+        font-size: 1.2em;
+        margin-top: -10px;
+    }
+    /*section populaires*/
+
+    #populaires
+    {
+        width: 180%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        border-radius: 0px;
+        padding-left: 0px;
+    }
+    #populaires h1
+    {
+        font-size: 2em;
+        padding-left: 40px;
+    }
+    .carre
+    {
+        width: 90%;
+        height: 160px;
+        margin-left: 30px;
+        margin-top: 3%;
+    }
+    #populaires img
+    {     
+        width: 50% ;
+        height: 150px;
+        margin-top: -12px;
+    }
+    #populaires p
+    {
+        text-align: left;
+         font-size: 1.1em;
+         padding-right: 80px;
+    }
+    #populaires h2
+    {
+         text-align: left;
+         font-size: 1.3em;
+         padding-right: 20px;
+         padding-top: 0px;   
+    }
+    #populaires span i
+    {
+        width: 1%;
+        margin-right: 10%;
+        font-size: 1.5em;
+    }  
+}
+/* Media queries: entre 487px et 768px */
+
+@media all and (min-width: 487px) and (max-width: 768px)
+{
+    article
+    {
+        width: 90%;
+        height: auto;
+        display: block;
+        flex-direction: row;
+        margin-left: 0%;
+        padding-right: 5%;
+        padding-top: 1px;
+    }
+    article h2
+    {
+       
+        font-size: 2em;
+        padding-left: 10px;
+    }
+    article h3
+    {
+        padding-left: 15px;
+        margin-top: 3%;
+        font-size: 1.5em;
     }
 
     #paysage
@@ -1075,77 +1376,423 @@ h3
     {
     width: 350px;
     height: 140px;
-    }
-
-
-
-   
+    }   
 }
 
-/*footer*/
-
-footer
-{
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction:row;
-    justify-content:start;
-    text-align:left;
-    background-color: #F2F2F2;
-    padding-top: 30px;
-    margin-top: 30px;
-    list-style: none;
-    padding: 20px 0px 20px 0px;
-    margin: 10px 0px 0px 0px;
-
-}
-
-
-
-div .fin
-{
-  
-
-        margin: auto;
-        font-size: 0.90em;
-        margin-left: 1px;
-        padding-left: 1px;
-
-}
-
-
-
-ul
-{
-    float: left;
-    text-align: left;
-    list-style: none;
-    margin-left: 50px; 
-    padding: 0px;
-    
-}
-
-li
-{
-    padding: 5px;
-}
-
-
-@media screen and (max-width: 487px) 
+@media all and (min-width: 487px) and (max-width: 768px)
 
 {
     footer
     { 
-        width: 112%;
+        width: 185%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
-    div .fin
-     {
+    footer .fin_1, .fin_2, .fin_3
+    {
     
-    font-size: 1em;
+    font-size: 1.4em;
+    padding-left: 5%; 
+    }
+    footer .fin_1 h2, .fin_2 h2
+    {
+        margin-left: 8%;
+    }
+    footer .fin_3 h2
+    {
+        margin-left: 8%;
+    }
+}
+
+
+/* Media queries: entre 768px et 1280px */
+
+@media all and (min-width: 768px) and (max-width: 1280px)
+{
+    body
+    {
+        width: 80%;
+          
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1280px)
+{
+    #bloc_page
+    {   
+        width: 55%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1px;
+        margin-left: 1px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1280px)
+{
+    header
+    {
+        width: 220%;
+        height: 145px;
+        padding-bottom: 1px;
+    }
+      
+   nav 
+    {
+        width: 40%;
+        height: 50px;
+        height: 4em;
+        display: flex;
+        flex-direction: row;
+        padding-left: 30%;
+        padding-bottom: 20%;
+        padding-top: 1%;
 
     }
+    #logo img
+    {
+        margin-top: 3%;
+        margin-left: 1%;
+    }   
+    nav ul 
+    {
+       margin-top: -11%;
+       margin-left: 50%;     
+    }
+    nav li
+    {     
+        font-size: 1.2em;       
+    }
+    li a 
+    {
+        color: black;
+        float: right;
+        text-align: right;
+        margin-top: 1%;
+    }
+     div .inscrire
+    {
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: -10%;
+        margin-left: 15%;
+        color: #0065FC;
+        cursor: pointer;
+    }        
+    nav a:hover
+    {
+    border-top: 3px  #0065FC;
+    padding: 0px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1280px)
+{
+    .intro
+    {         
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: -10%;
+        margin-right: 0%;
+        padding-left: 3%;
+        width: 110%;
+        height: auto;
+    }
+    .intro h2
+    {
+       width: 140%;
+       display: flex;
+       text-align:left;
+       font-size: 1.4em;
+
+    }
+    .intro h3 
+    {
+        font-size: 1em;
+        width: 120%;
+    }
+    div .carte
+    {
+        width: 140%;
+        padding-top: 5%;
+    }  
+    .carte  .loupe    
+    {
+        display:none;
+        background-color: #0065fc;
+        font-size: 1.3em;
+        color: white;
+        padding: 10px 15px 10px 15px;
+        border-radius: 12px 12px 12px 12px;    
+    }
+    .carte .loupe:hover
+    {
+        background: rgb(217, 217, 243);
+        color: #0065fc;
+        cursor: pointer;   
+    }
+
+    .filtres
+    {
+        width: 180%;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .filtres button 
+    {
+        margin-top: 5%;
+    }
+
+    
+    .info
+    {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 7%;
+    }
+    
+    .info i
+    {
+       color: #0065fc;
+       font-size: 0.8em; 
+    }
+    
+}
+
+
+
+@media all and (min-width: 768px) and (max-width: 1280px)
+{
+    main
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    #hebergements
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 20%;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+        padding-left: 0px;
+    }
+    .bloc
+    {
+        width: 150%;
+        height: 300px;
+        margin-left: 90%;
+
+    }
+    #hebergements section img  
+    {
+        width: 100%;
+        height: 200px;
+    }
+    #hebergements h1
+    {
+        font-size: 2em;
+        margin-left: 90%;
+
+    }
+    #hebergements h2
+    {
+        font-size: 1.5em;
+        margin-top: -10px;
+    }
+    #hebergements h3
+    {
+        margin-left: 40%;
+        font-size: 1.5em;
+    }
+
+    #hebergements p 
+    {
+        font-size: 1.2em;
+        margin-top: -10px;
+    }
+    /*section populaires*/
+
+    #populaires
+    {
+        width: 150%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35%;
+        border-radius: 20px;
+        padding-left: 0px;
+    }
+    #populaires h1
+    {
+        font-size: 2em;
+        padding-left: 40px;
+    }
+    .carre
+    {
+        width: 90%;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 3%;
+    }
+    #populaires img
+    {     
+        width: 50% ;
+        height: 190px;
+        margin-top: -16px;
+    }
+    #populaires p
+    {
+        text-align: left;
+         font-size: 1.3em;
+         padding-right: 80px;
+    }
+    #populaires h2
+    {
+         text-align: left;
+         font-size: 1.5em;
+         padding-right: 20px;
+         padding-top: 0px;   
+    }
+    #populaires span i
+    {
+        width: 1%;
+        margin-right: 10%;
+        font-size: 1.5em;
+    }  
+}
+/* Media queries: entre 487px et 768px */
+
+@media all and (min-width: 768px) and (max-width: 1280px)
+{
+    article
+    {
+        width: 120%;
+        height: auto;
+        display: block;
+        flex-direction: row;
+        margin-left: 20%;
+        padding-right: 5%;
+        padding-top: 1px;
+    }
+    article h2
+    {
+       
+        font-size: 2em;
+        padding-left: 10px;
+    }
+    article h3
+    {
+        padding-left: 15px;
+        margin-top: 3%;
+        font-size: 1.5em;
+    }
+
+    #paysage
+    {
+        width: 150%;
+    }
+
+    #paysage_1
+    {
+        width: 400px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_1 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_2
+    {
+        width: 400px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_2 img
+    {
+    width: 400px;
+    height: 140px;
+    }
+    #paysage_3
+    {
+        width: 400px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_3 img
+    {
+    width: 400px;
+    height: 140px;
+    }
+    #paysage_4
+    {
+        width: 400px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_4 img
+    {
+    width: 400px;
+    height: 140px;
+    }
+    #paysage_5
+    {
+        width: 400px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_5 img
+    {
+    width: 400px;
+    height: 140px;
+    }
+    #paysage_6
+    {
+        width: 400px;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_6 img
+    {
+    width: 400px;
+    height: 140px;
+    }   
+}
+
+@media all and (min-width: 768px) and (max-width: 1280px)
+
+{
+    footer
+    { 
+        width: 225%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .fin_1, .fin_2, .fin_3
+    {
+    
+    font-size: 1.4em;
+    padding-left: 5%; 
+    }
+    footer .fin_1 h2, .fin_2 h2
+    {
+        margin-left: 8%;
+    }
+    footer .fin_3 h2
+    {
+        margin-left: 8%;
+    }
+
+    
 }
