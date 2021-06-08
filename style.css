@@ -243,7 +243,7 @@ span i
 main
 {
     display: flex;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 /*section hébergements*/
@@ -1408,7 +1408,7 @@ footer li:hover
 
 /* Media queries: entre 768px et  1024px */
 
-@media all and (min-width: 768px) and (max-width:  1024px)
+@media all and (min-width: 767px) and (max-width:  1024px)
 {
     body
     {
@@ -1416,7 +1416,7 @@ footer li:hover
           
     }
 }
-@media all and (min-width: 768px) and (max-width:  1024px)
+@media all and (min-width: 767px) and (max-width:  1024px)
 {
     #bloc_page
     {   
@@ -1428,7 +1428,7 @@ footer li:hover
         margin-left: 1px;
     }
 }
-@media all and (min-width: 768px) and (max-width:  1024px)
+@media all and (min-width: 767px) and (max-width:  1024px)
 {
     header
     {
@@ -1476,7 +1476,7 @@ footer li:hover
         font-size: 1em;
         font-weight: bold;
         margin-top: -10%;
-        margin-left: 15%;
+        margin-left: -15%;
         color: #0065FC;
         cursor: pointer;
     }        
@@ -1486,7 +1486,7 @@ footer li:hover
     padding: 0px;
     }
 }
-@media all and (min-width: 768px) and (max-width:  1024px)
+@media all and (min-width: 767px) and (max-width:  1024px)
 {
     .intro
     {         
@@ -1562,7 +1562,7 @@ footer li:hover
 
 
 
-@media all and (min-width: 768px) and (max-width:  1024px)
+@media all and (min-width: 767px) and (max-width:  1024px)
 {
     main
     {
@@ -1671,7 +1671,7 @@ footer li:hover
 }
 /* Media queries: entre 487px et 768px */
 
-@media all and (min-width: 768px) and (max-width:  1024px)
+@media all and (min-width: 767px) and (max-width:  1024px)
 {
     article
     {
@@ -1769,7 +1769,7 @@ footer li:hover
     }   
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px)
+@media all and (min-width: 767px) and (max-width: 1024px)
 
 {
     footer
@@ -1799,7 +1799,7 @@ footer li:hover
 
 /* Media queries: entre 1024px et  1280px */
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (min-width: 1024px) and (max-width: 1279px)
 {
     .filtres
     {
@@ -1809,7 +1809,7 @@ footer li:hover
 
 
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (min-width: 1024px) and (max-width: 1279px)
 {
       div .inscrire
       {
@@ -1817,7 +1817,7 @@ footer li:hover
       }
 }      
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (min-width: 1024px) and (max-width: 1279px)
 {
     main 
     {
@@ -1871,7 +1871,7 @@ footer li:hover
 }
 
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (min-width: 1024px) and (max-width: 1279px)
 {
     article
     {
@@ -1880,7 +1880,7 @@ footer li:hover
        
     }
 }
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (min-width: 1024px) and (max-width: 1279px)
 {
     footer
     {
