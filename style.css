@@ -4,110 +4,79 @@ body
     
     font-family: 'Raleway', sans-serif;
     background-color: #ffff;
-    display: grid;
-}
-#bloc_page
-{
-    width: auto;
-    margin: auto;
-    display: block;
-    background-color: white;
-}
-/* Header */
-#logo img
-{   
-   
-    padding-left: 3.5%;
-    margin-left: 0%;
-    margin-top: 20px;
+
 }
 
-/*Navigation*/
-nav
-{
-    width: auto;
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-left: 0%;
-    margin-left: 2%;
-    padding-right: 2%;
-}
+/*header*/
 
-nav ul
-{   
-    float: right;
+header
+{
     display: flex;
-    font-size: 90%;
+    justify-content: space-between;
+    padding: 5px;
+}
+#logo
+{
+    padding-top: 20px;
+    margin-left: 20px;
+}
+/*nav*/
+nav ul
+{
+    display: flex;
+    padding: 5px;
     list-style-type: none;
-    margin: 5%;
-    padding-right: 12%;
-    margin-top: -3%;
+    margin-right: 60px;
 }
 nav li
 {
-    margin-left: 1%;
-    padding-left: 1%;
-    margin-right: 30%;
+    padding: 20px;
 }
 nav a
 {
-    width: 100%;
-    color: black;
     text-decoration: none;
-    padding-bottom: 10px;
+    color: black;
 }
-
-div .inscrire
-{
-    float: right;
-    margin-right: -35%;
-    margin-top: -2.7%;
-    color: blue;
-    font-weight: bolder;
-}
-nav a:hover
+a:hover
 {
     color: #0065FC;
-    padding-top: 3em;
+    padding-top: 50px;
     border-top: 5px solid #0065FC;
+}
+nav li #inscrire
+{
+    color: #0065FC;
+    font-weight: bolder;
+}
+#inscrire:hover
+{
+    border-top: 1px solid #ffff;
 }
 /*section .intro*/
 .intro
 {
-    display:flex;
-    flex-direction: column;
-    margin: 15px;
-    padding: 30px;
-    padding-top: 20px;
-
+    margin-left: 20px;
 }
-#titre_pincipal
+.intro h2 
 {
-
-    display: flex;
-    flex-direction: column;
-}
-.intro h2
-{
-    font-size: 1.35em;
-    text-align: left;
-    margin-top: 20px;
-    font-weight: bolder;
+    font-size: 22px;
 }
 .intro h3
 {
-    font-size: 1em;
-    font-weight: 500;
-    margin-left: -2%;   
+    font-weight:500;
+    font-size: 18px;
+    padding-left: 1px;
 }
-/* div carte*/
-div .carte
+/*form .carte*/
+
+.carte
 {
     padding-top: 15px;
+    padding-bottom: 15px;
 }
-div button 
+.carte button 
 {   
-    font-size: 1.1em;
+    font-size: 20px;
     border-width: 1px;
     padding: 10px 15px 10px 15px;
     border-radius: 15px 0px 0px 15px;
@@ -116,13 +85,13 @@ div button
 }
 div button i
 {
-    font-size: 1em;
+    font-size: 20px;
 }
 .carte .recherche
 {
     
     background-color: #0065fc;
-    font-size: 1.3em;
+    font-size: 20px;
     color: white;
     padding: 10px 15px 10px 15px;
     border-radius: 0px 15px 15px 0px;
@@ -135,37 +104,41 @@ div button i
 }
 div input
 {
-    font-size: 0.9em;
+    font-size: 15px;
     border-width: 0px; 
-    padding: 10px 15px 5px 15px;
-    margin: -5px;
 }
 .carte input 
 {
     font-weight:600;
+    border: 1px solid white;
+    margin-top: 10px;
+    
     padding: 12.5px 15px 11px 10px;
 }
 .carte  .loupe
 {
     display: none;
 }
+
+
 /*div filtres */
 .filtres
 {
-    margin-top: 5%;
-    margin-left: 1%;
-    width: 140%;
+    margin-top: 20px;
 }
-
+.filtres strong
+{
+    font-size: 13px;
+}
  label
 {
     color: black;
     font-weight:600;
-    font-size: 1em;
+    font-size: 16px;
     border-radius: 30px;
     padding: 13px 13px 13px 23px;
-    margin: 1%;
-    margin-left: 2%;
+    margin: 10px;
+    margin-left: 10px;
     padding-left: 5px;
     padding-right: 5px;
     background-color: white;
@@ -173,8 +146,7 @@ div input
 }
 span
 {
-    padding-left: 1%;
-  
+    padding-left: 10px;  
 }
 span a
 {
@@ -186,7 +158,6 @@ span label:hover
     background: #0065FC;
     border:solid 1px rgb(217, 217, 243);
     cursor: pointer;
-
 }
 span button
 {
@@ -195,8 +166,8 @@ span button
     font-size: 1em;
     border-radius: 30px;
     padding: 3px 3px 3px 3px;
-    margin: 1%;
-    margin-left: 1%;
+    margin: 10px;
+    margin-left: 10px;
     background-color: white;
     border: none;
 }
@@ -205,7 +176,6 @@ span button:hover
     color: #ffff;
     background: #0065FC;
     cursor: pointer;
-
 }
 span i
 {
@@ -215,56 +185,46 @@ span i
     border: 6px solid #DEEBFF;
     padding: 10px 10px 10px 10px;
     margin-left: -21px;
-    padding-left: 1%;
+    padding-left: 10px;
 }
 .info
 {
     background-color: white;
-
 }
-
 .info i
 {
    color: #0065fc;
-   font-size: 0.8em;
+   font-size: 8px;
    padding: 0.50em 0.65em 0.50em 0.65em;
-   margin-right: 1%;
    border: 2px solid #F2F2F2;
    border-radius: 100%;
-
 }
-
 .info  p
 {
-    font-size: 0.9em;
+    font-size: 13px;
 }
-
 /*main*/
+/*section hébergements*/
 main
 {
     display: flex;
-    margin-right: 3%;
+    margin-top: 30px; 
+    margin-left: 40px;
+    margin-right: 0px;
 }
-
-/*section hébergements*/
 #hebergements 
 {
-    float: left;
     text-align: center;
     justify-content: center;
     width: 60%;
-    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    text-align: left;
-    margin: 0px 0px 0px 40px;
+    text-align:left;
     padding: 30px;
-    margin-top: -30px; 
-    padding-right:10px ;   
+    padding-right:1px;   
 }
 h1
 {
-    display: grid ;
     font-size: 1.3em;
     padding: 1px;
     margin: 1px;
@@ -274,7 +234,7 @@ h1
     float: left;
     border-radius: 15px;
     width: 29%;
-    height: 10%;
+    height: 37%;
     text-align: left;
     font-size: medium;
     background-color: white;
@@ -290,7 +250,6 @@ h1
 }
 .full
 {
-    display: block;
     justify-content: center;
     text-align: right;
     width: 100%;
@@ -349,27 +308,33 @@ h1
 {
     color:  #0065FC;
 }
+
+
 /*section populaires*/
 #populaires
 {
-    float: left;
+    display: flex;
+    flex-direction: column;
     width: 25%;
-    height: 540px;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    margin: 0px 0px 0px 40px;
-    margin-top: -30px;    
+    padding-top: 1px;
+    margin: 0px 0px 0px 60px;
+}
+#populaires h1
+{
+    padding-top: 30px;
 }
 #populaires h2
 {
     display:flex;
     text-align: left;  
-    font-size: 80%;
+    font-size: 15px;
     padding: 4px;
     margin: 4px;
     padding-right: 0px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 #populaires span i
 {
@@ -386,9 +351,9 @@ h1
 {    
     border-radius: 20px;
     width: 90%;
-    height: 24%;
+    height: 23%;
     background-color: white;
-    margin-top: 30px;
+    margin-top: 10px;
     box-shadow: 0px 3px 0px rgb(218, 210, 210);
     cursor: pointer;
 }
@@ -403,7 +368,7 @@ h1
     height: 125px;
     object-fit: cover;
     margin: 5px;
-    margin-top: 2px;
+    margin-top: -10px;
     margin-left: -5px;
     margin-bottom: 20px;
     border-radius: 20px 0px 0px 20px;
@@ -433,16 +398,27 @@ h1
     color: #F2F2F2;
 }
 
+
+/*main*/
+main img 
+{
+    display:;
+}
+
+
+/*article*/
+article img 
+{
+    display:;
+}
+
 /* Section Activités à Marseille*/
 article
 {
-    width: 95%;
-    display:inline-block;
+    display:;
     text-align: center;
-    padding: 20px;
-    padding-left: 2%;
-    margin: 0px 0px 0px 20px;
-    background-color:white;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
 }
  h2
 {
@@ -452,7 +428,11 @@ article
 }
 #promenade_1
 {
-    display: table-cell;
+    display:table-cell;
+}
+#promenade_2
+{
+    display:table-cell;
 }
 .paysage
 {
@@ -518,10 +498,7 @@ h3
     height: 120px;
     object-fit: cover;
 }
-#promenade_2
-{    
-    display: table-cell;
-}
+
 #paysage_4
 {
     display: flex;
@@ -563,8 +540,6 @@ h3
     object-fit: cover;
 }
 
-
-
 /*footer*/
 
 footer
@@ -576,11 +551,10 @@ footer
     justify-content:start;
     text-align:left;
     background-color: #F2F2F2;
-    padding-top: 30px;
-    margin-top: 30px;
+    margin-top: 10%;
     list-style: none;
-    padding: 20px 0px 20px 0px;
-    margin: 10px 0px 0px 0px;
+    margin-top: 5%;
+
 }
 
 div .fin
@@ -619,54 +593,33 @@ footer li:hover
     color: blue;
 }
 
-
-
 /* Media queries: 487px */
 
 @media screen and (max-width: 487px) 
 {
     body
     {
-        width: 80%;
-          
+      width: 80%;
+      margin-left: 0px;
     }
 }
-@media screen and (max-width: 487px) 
-{
-    #bloc_page
-    {   
-        width: 74.5%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding-left: 1px;
-        margin-left: 1px;
-    }
-}
+
 @media screen and (max-width: 487px) 
 {
     header
     {
-        width: 160%;
-        height: 145px;
+        height: 100px;
         padding-bottom: 1px;
-        border-bottom: 4px solid whitesmoke;
-
-
-
-    }
-      
+    }     
    nav 
     {
-        width: 60%;
-        height: 50px;
-        height: 4em;
+        height: 70px;
         display: flex;
-        flex-direction: row;
-        padding-left: 30%;
-        padding-bottom: 20%;
-        padding-top: 1%;
-
+        flex-direction: column;
+        margin-left: -150px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+        border-bottom: 4px solid whitesmoke;
     }
     #logo img
     {
@@ -676,19 +629,13 @@ footer li:hover
     }   
     nav ul 
     {
-        width: 70%;
         height: 10px;
         padding-top: 10%;
-        margin-left: -50%;
-
-        
     }
     nav li
     {     
         font-size: 1.2em;
         padding: 30px;
-
-
     }
 
     li a 
@@ -697,15 +644,16 @@ footer li:hover
         float: right;
         text-align: right;
     }
-    #inscription
+    nav li #inscrire
     {
-        display: none;
+        margin-top: -70px;
+        margin-left: -120px;
     }
 
      div .inscrire
     {
         display: block;
-        font-size: 1em;
+        font-size: 10px;
         font-weight: bold;
         margin-top: -13%;
         padding-left: 10%;
@@ -718,6 +666,11 @@ footer li:hover
     padding: 0.1em 0 0.1em 0;
     border-top:none;
     }
+    nav li #inscrire:hover
+    {
+        border-bottom: 1px solid white;
+    }
+
 }
 @media screen and (max-width: 487px) 
 {
@@ -726,29 +679,23 @@ footer li:hover
         display: flex;
         flex-direction: column;
         text-align: left;
-        margin-top: -10%;
-        margin-right: 0%;
-        padding-left: 3%;
-        width: 110%;
+        margin-top: 50px;
         height: auto;
     }
     .intro h2
     {
-       width: 120%;
        display: flex;
        text-align:left;
-       font-size: 1.4em;
+       font-size: 1.5em;
 
     }
     .intro h3 
     {
-        font-size: 1em;
-        width: 120%;
+        font-size: 20px;
     }
     div .carte
     {
-        width: 140%;
-        padding-top: 5%;
+        padding-top: 10px;
     }
 
     .carte  .recherche
@@ -763,7 +710,7 @@ footer li:hover
         font-size: 1.3em;
         color: white;
         padding: 10px 15px 10px 15px;
-        border-radius: 12px 12px 12px 12px;    
+        border-radius: 0px 12px 12px 0px;    
     }
     .carte .loupe:hover
     {
@@ -776,12 +723,18 @@ footer li:hover
     {
         display: flex;
         flex-direction:column;
-        margin-top: 10%;
-        margin-left: 2%;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: 2px;
     }
     .filtres button 
     {
         margin-top: 5%;
+    }
+    span label
+    {
+        font-size: 20px;
+        padding-top: 10px;
     }
 
     
@@ -805,27 +758,27 @@ footer li:hover
 {
     main
     {
-        width: auto;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-left: 1px;
     }
     #hebergements
     {
-        width: 130%;
+        width: 120%;
         height: auto;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        margin-left: 15px;
+        margin-left: 1px;
         align-content: center;
         justify-content: center;
         background-color: white;
-        padding-left: 10px;
+        padding-left: 0px;
     }
     .bloc
     {
-        width: 115%;
+        width: 100%;
         height: 180px;
         padding-left: 0px;
 
@@ -834,7 +787,6 @@ footer li:hover
     {
         width: 100%;
         height: 120px;
-        padding-top: 2%;
     }
     #hebergements h1
     {
@@ -854,7 +806,7 @@ footer li:hover
 
     #populaires
     {
-        width: 160%;
+        width: 120%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -897,15 +849,11 @@ footer li:hover
         padding-right: 40px;
     }  
 }
-
-
-
-
 @media screen and (max-width: 487px) 
 {
     article
     {
-        width: 90%;
+        width: 110%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -930,7 +878,7 @@ footer li:hover
 
     #paysage_1
     {
-        width: 155%;
+        width: 100%;
         height: 190px;
         background-color: white;
     }
@@ -941,7 +889,7 @@ footer li:hover
     }
     #paysage_2
     {
-        width: 155%;
+        width: 100%;
         height: 190px;
         background-color: white;
     }
@@ -952,7 +900,7 @@ footer li:hover
     }
     #paysage_3
     {
-        width: 155%;
+        width: 100%;
         height: 190px;
         background-color: white;
     }
@@ -963,7 +911,7 @@ footer li:hover
     }
     #paysage_4
     {
-        width: 155%;
+        width: 100%;
         height: 190px;
         background-color: white;
     }
@@ -974,7 +922,7 @@ footer li:hover
     }
     #paysage_5
     {
-        width: 155%;
+        width: 100%;
         height: 190px;
         background-color: white;
     }
@@ -985,7 +933,7 @@ footer li:hover
     }
     #paysage_6
     {
-        width: 155%;
+        width: 100%;
         height: 190px;
         background-color: white;
     }
@@ -1000,8 +948,7 @@ footer li:hover
 {
     footer
     { 
-        width: 160%;
-        height: auto;
+        width: 130%;
         display: flex;
         flex-direction: column;
     }
@@ -1009,7 +956,7 @@ footer li:hover
     {
     
     font-size: 1.2em;
-    padding-left: 5%; 
+    padding-left: 0%; 
     }
     footer .fin_1 h2, .fin_2 h2, .fin_3 h2
     {
@@ -1018,43 +965,28 @@ footer li:hover
     
 }
 
-/* Media queries: entre 487px et 768px */
 
-@media all and (min-width: 487px) and (max-width: 768px)
+/* Media queries: entre 487px et 890px */
+
+@media all and (min-width: 487px) and (max-width: 890px)
 {
     body
     {
-        width: 80%;
+        width: 60%;
           
     }
 }
-@media all and (min-width: 487px) and (max-width: 768px)
-{
-    #bloc_page
-    {   
-        width: 55%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding-left: 1px;
-        margin-left: 1px;
-    }
-}
-@media all and (min-width: 487px) and (max-width: 768px)
+
+@media all and (min-width: 487px) and (max-width: 890px)
 {
     header
     {
-        width: 160%;
-        height: 145px;
         padding-bottom: 1px;
-
-
-
     }
       
    nav 
     {
-        width: 40%;
+        width: 10%;
         height: 50px;
         height: 4em;
         display: flex;
@@ -1100,7 +1032,7 @@ footer li:hover
     padding: 0px;
     }
 }
-@media all and (min-width: 487px) and (max-width: 768px)
+@media all and (min-width: 487px) and (max-width: 890px)
 {
     .intro
     {         
@@ -1130,15 +1062,19 @@ footer li:hover
     {
         width: 140%;
         padding-top: 5%;
+    }
+    .carte .recherche
+    {
+        display: none;
     }  
     .carte  .loupe    
     {
-        display:none;
+        display: initial;
         background-color: #0065fc;
         font-size: 1.3em;
         color: white;
         padding: 10px 15px 10px 15px;
-        border-radius: 12px 12px 12px 12px;    
+        border-radius: 0px 12px 12px 0px;    
     }
     .carte .loupe:hover
     {
@@ -1177,7 +1113,7 @@ footer li:hover
 
 
 
-@media all and (min-width: 487px) and (max-width: 768px)
+@media all and (min-width: 487px) and (max-width: 890px)
 {
     main
     {
@@ -1238,7 +1174,7 @@ footer li:hover
         display: flex;
         flex-direction: column;
         margin-left: 0px;
-        border-radius: 0px;
+        border-radius: 30px;
         padding-left: 0px;
     }
     #populaires h1
@@ -1281,7 +1217,7 @@ footer li:hover
 }
 /* Media queries: entre 487px et 768px */
 
-@media all and (min-width: 487px) and (max-width: 768px)
+@media all and (min-width: 487px) and (max-width: 890px)
 {
     article
     {
@@ -1289,8 +1225,7 @@ footer li:hover
         height: auto;
         display: block;
         flex-direction: row;
-        margin-left: 0%;
-        padding-right: 5%;
+        margin-left: 10%;
         padding-top: 1px;
     }
     article h2
@@ -1379,12 +1314,12 @@ footer li:hover
     }   
 }
 
-@media all and (min-width: 487px) and (max-width: 768px)
+@media all and (min-width: 487px) and (max-width: 890px)
 
 {
     footer
     { 
-        width: 185%;
+        width: 200%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1408,408 +1343,22 @@ footer li:hover
 
 /* Media queries: entre 768px et  1024px */
 
-@media all and (min-width: 767px) and (max-width:  1024px)
-{
-    body
-    {
-        width: 80%;
-          
-    }
-}
-@media all and (min-width: 767px) and (max-width:  1024px)
-{
-    #bloc_page
-    {   
-        width: 55%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding-left: 1px;
-        margin-left: 1px;
-    }
-}
-@media all and (min-width: 767px) and (max-width:  1024px)
-{
-    header
-    {
-        width: 220%;
-        height: 145px;
-        padding-bottom: 1px;
-    }
-      
-   nav 
-    {
-        width: 40%;
-        height: 50px;
-        height: 4em;
-        display: flex;
-        flex-direction: row;
-        padding-left: 30%;
-        padding-bottom: 20%;
-        padding-top: 1%;
 
-    }
-    #logo img
-    {
-        margin-top: 3%;
-        margin-left: 1%;
-    }   
-    nav ul 
-    {
-       margin-top: -11%;
-       margin-left: 50%;     
-    }
-    nav li
-    {     
-        font-size: 1.2em;       
-    }
-    li a 
-    {
-        color: black;
-        float: right;
-        text-align: right;
-        margin-top: 1%;
-    }
-     div .inscrire
-    {
-        display: block;
-        font-size: 1em;
-        font-weight: bold;
-        margin-top: -10%;
-        margin-left: -15%;
-        color: #0065FC;
-        cursor: pointer;
-    }        
-    nav a:hover
-    {
-    border-top: 3px  #0065FC;
-    padding: 0px;
-    }
-}
-@media all and (min-width: 767px) and (max-width:  1024px)
-{
-    .intro
-    {         
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        margin-top: -10%;
-        margin-right: 0%;
-        padding-left: 3%;
-        width: 110%;
-        height: auto;
-    }
-    .intro h2
-    {
-       width: 140%;
-       display: flex;
-       text-align:left;
-       font-size: 1.4em;
-
-    }
-    .intro h3 
-    {
-        font-size: 1em;
-        width: 120%;
-    }
-    div .carte
-    {
-        width: 140%;
-        padding-top: 5%;
-    }  
-    .carte  .loupe    
-    {
-        display:none;
-        background-color: #0065fc;
-        font-size: 1.3em;
-        color: white;
-        padding: 10px 15px 10px 15px;
-        border-radius: 12px 12px 12px 12px;    
-    }
-    .carte .loupe:hover
-    {
-        background: rgb(217, 217, 243);
-        color: #0065fc;
-        cursor: pointer;   
-    }
-
-    .filtres
-    {
-        width: 180%;
-        margin-top: 10%;
-        margin-left: 2%;
-    }
-    .filtres button 
-    {
-        margin-top: 5%;
-    }
-
-    
-    .info
-    {
-        width: 100%;
-        font-size: 1em;
-        margin-top: 7%;
-    }
-    
-    .info i
-    {
-       color: #0065fc;
-       font-size: 0.8em; 
-    }
-    
-}
-
-
-
-@media all and (min-width: 767px) and (max-width:  1024px)
-{
-    main
-    {
-        width: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-    }
-    #hebergements
-    {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 20%;
-        align-content: center;
-        justify-content: center;
-        background-color: white;
-        padding-left: 0px;
-    }
-    .bloc
-    {
-        width: 150%;
-        height: 300px;
-        margin-left: 90%;
-
-    }
-    #hebergements section img  
-    {
-        width: 100%;
-        height: 200px;
-    }
-    #hebergements h1
-    {
-        font-size: 2em;
-        margin-left: 90%;
-
-    }
-    #hebergements h2
-    {
-        font-size: 1.5em;
-        margin-top: -10px;
-    }
-    #hebergements h3
-    {
-        margin-left: 40%;
-        font-size: 1.5em;
-    }
-
-    #hebergements p 
-    {
-        font-size: 1.2em;
-        margin-top: -10px;
-    }
-    /*section populaires*/
-
-    #populaires
-    {
-        width: 150%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-left: 35%;
-        border-radius: 20px;
-        padding-left: 0px;
-    }
-    #populaires h1
-    {
-        font-size: 2em;
-        padding-left: 40px;
-    }
-    .carre
-    {
-        width: 90%;
-        height: 200px;
-        margin-left: 30px;
-        margin-top: 3%;
-    }
-    #populaires img
-    {     
-        width: 50% ;
-        height: 190px;
-        margin-top: -16px;
-    }
-    #populaires p
-    {
-        text-align: left;
-         font-size: 1.3em;
-         padding-right: 80px;
-    }
-    #populaires h2
-    {
-         text-align: left;
-         font-size: 1.5em;
-         padding-right: 20px;
-         padding-top: 0px;   
-    }
-    #populaires span i
-    {
-        width: 1%;
-        margin-right: 10%;
-        font-size: 1.5em;
-    }  
-}
-/* Media queries: entre 487px et 768px */
-
-@media all and (min-width: 767px) and (max-width:  1024px)
-{
-    article
-    {
-        width: 120%;
-        height: auto;
-        display: block;
-        flex-direction: row;
-        margin-left: 20%;
-        padding-right: 5%;
-        padding-top: 1px;
-    }
-    article h2
-    {
-       
-        font-size: 2em;
-        padding-left: 10px;
-    }
-    article h3
-    {
-        padding-left: 15px;
-        margin-top: 3%;
-        font-size: 1.5em;
-    }
-
-    #paysage
-    {
-        width: 150%;
-    }
-
-    #paysage_1
-    {
-        width: 400px;
-        height: 190px;
-        background-color: white;
-    }
-    #paysage_1 img
-    {
-    width: 100%;
-    height: 140px;
-    }
-    #paysage_2
-    {
-        width: 400px;
-        height: 190px;
-        background-color: white;
-    }
-    #paysage_2 img
-    {
-    width: 400px;
-    height: 140px;
-    }
-    #paysage_3
-    {
-        width: 400px;
-        height: 190px;
-        background-color: white;
-    }
-    #paysage_3 img
-    {
-    width: 400px;
-    height: 140px;
-    }
-    #paysage_4
-    {
-        width: 400px;
-        height: 190px;
-        background-color: white;
-    }
-    #paysage_4 img
-    {
-    width: 400px;
-    height: 140px;
-    }
-    #paysage_5
-    {
-        width: 400px;
-        height: 190px;
-        background-color: white;
-    }
-    #paysage_5 img
-    {
-    width: 400px;
-    height: 140px;
-    }
-    #paysage_6
-    {
-        width: 400px;
-        height: 190px;
-        background-color: white;
-    }
-    #paysage_6 img
-    {
-    width: 400px;
-    height: 140px;
-    }   
-}
-
-@media all and (min-width: 767px) and (max-width: 1024px)
-
-{
-    footer
-    { 
-        width: 225%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    footer .fin_1, .fin_2, .fin_3
-    {
-    
-    font-size: 1.4em;
-    padding-left: 5%; 
-    }
-    footer .fin_1 h2, .fin_2 h2
-    {
-        margin-left: 8%;
-    }
-    footer .fin_3 h2
-    {
-        margin-left: 8%;
-    }
-
-    
-}
+ 
 
 /* Media queries: entre 1024px et  1280px */
 
-@media all and (min-width: 1024px) and (max-width: 1279px)
+@media all and (min-width: 890px) and (max-width: 1279px)
 {
-    .filtres
+    body 
     {
-        width: 180%;
+        width: 100%;
     }
 }
 
 
 
-@media all and (min-width: 1024px) and (max-width: 1279px)
+@media all and (min-width: 890px) and (max-width: 1279px)
 {
       div .inscrire
       {
@@ -1817,19 +1366,21 @@ footer li:hover
       }
 }      
 
-@media all and (min-width: 1024px) and (max-width: 1279px)
+@media all and (min-width: 890px) and (max-width: 1279px)
 {
     main 
     {
-        margin-left: 5%;
+        margin: 20px;
     }
     #hebergements
     {
-        width: 80%;
+        width: 60%;
+        height: 100%;
     }
     .bloc
     {
         width: 40%;
+        height: 25%;
         margin: 3%;
         margin-top: 7%;
     }
@@ -1838,16 +1389,10 @@ footer li:hover
 
     #populaires
     {
-        width: 40%;
+        width: 30%;
         height: auto;
-
-
     }
-    #populaires h1
-    {
-        
-    }
-    .carre
+      .carre
     {
         width: 100%;
         height: 160px;
@@ -1858,7 +1403,7 @@ footer li:hover
     {
         width: 40% ;
         height: 150px;
-        margin-top: 5px;
+        margin-top: -5px;
     }
     #populaires h2
     {
@@ -1869,21 +1414,101 @@ footer li:hover
         font-size: 0.8em;
     }
 }
-
-
-@media all and (min-width: 1024px) and (max-width: 1279px)
+@media all and (min-width: 890px) and (max-width: 1279px)
 {
     article
     {
-        
-        margin-left: 5%;
-       
+      margin-left: 10%;
     }
+    article h2
+    {
+       
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    article h3
+    {
+        padding-left: 15px;
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+    #paysage_1
+    {
+        width: 70%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_1 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_2
+    {
+        width: 70%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_2 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_3
+    {
+        width: 70%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_3 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_4
+    {
+        width: 70%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_4 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_5
+    {
+        width: 70%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_5 img
+    {
+    width: 100%;
+    height: 140px;
+    }
+    #paysage_6
+    {
+        width: 70%;
+        height: 190px;
+        background-color: white;
+    }
+    #paysage_6 img
+    {
+    width: 100%;
+    height: 140px;
+    }   
 }
-@media all and (min-width: 1024px) and (max-width: 1279px)
+@media all and (min-width: 890px) and (max-width: 1279px)
 {
     footer
     {
-        width: 105%;       
+        width: 100%;
+        margin-right: 1px;
+    }
+    footer .fin_1, .fin_2, .fin_3
+    {
+    margin-left: 5%; 
     }
 }
