@@ -966,7 +966,20 @@ footer li:hover
 }
 
 
+
+@media all and (min-width: 300px) and (max-width: 487px)
+{
+    body
+    {
+        width: 100%;
+          
+    }
+}
+
+
 /* Media queries: entre 487px et 890px */
+
+
 
 @media all and (min-width: 487px) and (max-width: 890px)
 {
