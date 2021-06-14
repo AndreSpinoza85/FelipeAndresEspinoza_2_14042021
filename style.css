@@ -204,6 +204,7 @@ span i
     font-size: 13px;
 }
 /*main*/
+
 /*section hébergements*/
 main
 {
@@ -593,18 +594,23 @@ footer li:hover
 {
     header
     {
+        width: 125%;
         height: 100px;
-        padding-bottom: 1px;
+        padding-bottom: 10%;
+        border-bottom: 4px solid whitesmoke;
+
+
     }     
    nav 
     {
+        width: 600px;
         height: 70px;
         display: flex;
         flex-direction: column;
-        margin-left: -150px;
+        margin-left: -100px;
         padding-bottom: 60px;
         padding-top: 10px;
-        border-bottom: 4px solid whitesmoke;
+
     }
     #logo img
     {
@@ -959,9 +965,14 @@ footer li:hover
         width: 100%;
           
     }
+
+    article
+    {
+        
+        margin-left: 1px;
+    }
+
 }
-
-
 /* Media queries: entre 487px et 890px */
 
 
