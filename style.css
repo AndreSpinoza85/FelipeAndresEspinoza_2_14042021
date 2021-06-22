@@ -578,9 +578,9 @@ footer .fin_1, .fin_2, .fin_3
     margin: 1%;
     margin-left: 9%;
 }
-footer li:hover
+footer a:hover
 {
-    color: blue;
+    color: #0065FC;
 }
 
 /* Media queries: 487px */
