@@ -566,6 +566,7 @@ ul
 }
 li
 {
+    display: flex;
     padding: 5px;
 }
 footer a 
