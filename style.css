@@ -975,14 +975,29 @@ footer a:hover
 {
     body
     {
-        width: 110%;
+        width: 130%;
           
     }
-
+    nav 
+    {
+        padding-left: 5%;
+    }
+    main 
+    {
+        padding-left: 0;
+    }
+    #polpulaires 
+    {
+        margin-left: 0%;
+    }
+    #hebergements
+    {
+        margin-left: 2%;
+    }
     article
     {
         
-        margin-left: 1px;
+        margin-left: 5%;
     }
 
 }
