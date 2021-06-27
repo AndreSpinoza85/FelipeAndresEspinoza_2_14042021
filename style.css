@@ -29,20 +29,20 @@ nav ul
     display: flex;
     list-style-type: none;
     margin-right: 60px;
+    margin-top: -10px;
     
 }
 
-nav a
+ a
 {
     text-decoration: none;
     color: black;
-    padding: 0px 10px;
+    padding: 40px 10px;
 }
 nav a:hover
 {
     color: #0065FC;
-    padding: 10px;
-    border-top: 3px solid #0065FC;
+    border-top: 4px solid #0065FC;
 }
 
 nav li #inscrire
@@ -660,7 +660,7 @@ footer a:hover
     nav a:hover
     {
     border-top: 4px  solid #0065FC;
-    padding-bottom: 0px;
+    padding: 10px;
     border:none;
     }
     nav li #inscrire:hover
