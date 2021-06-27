@@ -24,34 +24,27 @@ header
     margin-left: 20px;
 }
 /*nav*/
-
 nav ul
 {
     display: flex;
-    padding: 5px;
     list-style-type: none;
     margin-right: 60px;
     
 }
-nav li
-{
-    padding: 20px;
-    padding-top: 0;
-}
+
 nav a
 {
-    width: 100%; 
     text-decoration: none;
-    margin-bottom: 0px;
     color: black;
-    cursor: pointer;
+    padding: 0px 5px;
 }
 nav a:hover
 {
     color: #0065FC;
-    padding: 10px;
+    padding-top: 15px;
     border-top: 4px solid #0065FC;
 }
+
 nav li #inscrire
 {
     color: #0065FC;
@@ -666,9 +659,9 @@ footer a:hover
     }        
     nav a:hover
     {
-    border-bottom: 4px  solid #0065FC;
-    padding: 0.1em 0 0.1em 0;
-    border-top:none;
+    border-top: 4px  solid #0065FC;
+    padding-bottom: 0px;
+    border:none;
     }
     nav li #inscrire:hover
     {
@@ -982,6 +975,10 @@ footer a:hover
     {
         padding-left: 5%;
     }
+    }        
+   
+
+
     main 
     {
         padding-left: 0;
