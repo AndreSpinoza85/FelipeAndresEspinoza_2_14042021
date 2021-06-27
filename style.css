@@ -36,13 +36,13 @@ nav a
 {
     text-decoration: none;
     color: black;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 nav a:hover
 {
     color: #0065FC;
-    padding-top: 15px;
-    border-top: 4px solid #0065FC;
+    padding: 10px;
+    border-top: 3px solid #0065FC;
 }
 
 nav li #inscrire
