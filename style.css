@@ -604,10 +604,8 @@ footer a:hover
         height: 100px;
         padding-bottom: 10%;
         border-bottom: 4px solid whitesmoke;
-
-
-    }     
-   nav 
+    }    
+    nav 
     {
         width: 600px;
         height: 70px;
@@ -616,31 +614,23 @@ footer a:hover
         margin-left: -100px;
         padding-bottom: 60px;
         padding-top: 10px;
-
     }
     #logo img
     {
         margin-top: 3%;
         margin-left: 5%;
-
     }   
     nav ul 
     {
         height: 10px;
-        padding-top: 10%;
+        margin-top: -3%;
     }
     nav li
     {     
         font-size: 1.2em;
-        padding: 30px;
-    }
-
-    li a 
-    {
-        color: black;
-        float: right;
-        text-align: right;
-    }
+        padding: 80px;
+        margin-left: -10% ;
+    } 
     nav li #inscrire
     {
         margin-top: -70px;
@@ -656,12 +646,17 @@ footer a:hover
         padding-left: 10%;
         color: #0065FC;
         cursor: pointer;
+    }
+    nav a 
+    {
+        color: black;
+        text-align: right;
     }        
     nav a:hover
     {
-    border-top: 4px  solid #0065FC;
-    padding: 10px;
-    border:none;
+    color: #0065FC;
+    border-bottom: #0065FC solid 2px;
+    border-top: none;
     }
     nav li #inscrire:hover
     {
@@ -968,17 +963,25 @@ footer a:hover
 {
     body
     {
-        width: 130%;
+        width: 150%;
           
     }
     nav 
     {
         padding-left: 5%;
     }
+    nav a 
+    {
+        color: black;
+        text-align: right;
     }        
-   
-
-
+    nav a:hover
+    {
+    color: #0065FC;
+    border-bottom: #0065FC solid 2px;
+    border-top: none;
+    }
+       
     main 
     {
         padding-left: 0;
@@ -1375,12 +1378,34 @@ footer a:hover
 }
 
 
-/* Media queries: entre 768px et  1024px */
+/* Media queries: entre 487px et 890px */
 
+
+
+@media all and (min-width: 487px) and (max-width: 700px)
+{
+    body
+    {
+        width: 100%;
+          
+    }
+}
+
+@media all and (min-width: 487px) and (max-width: 700px)
+{
+    header
+    {
+        padding-bottom: 1px;
+    }
+      
+   nav 
+    {
+        margin-right: -40%;
+    }
+}
 
  
 
-/* Media queries: entre 1024px et  1280px */
 
 @media all and (min-width: 890px) and (max-width: 1279px)
 {
