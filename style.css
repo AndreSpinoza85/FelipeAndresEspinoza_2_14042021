@@ -127,11 +127,14 @@ div input
 /*div filtres */
 .filtres
 {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
 }
-.filtres strong
+.filtres p
 {
-    font-size: 13px;
+        font-size: 15px;
+        font-weight: bolder;
 }
  label
 {
@@ -241,7 +244,7 @@ h1
     text-align: left;
     font-size: medium;
     background-color: white;
-    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    box-shadow:  2px 2px 10px 2px #969191;
     margin-top: 25px;
     padding: 1px 1px 1px 1px;
     margin-left: 1.5%;
@@ -357,7 +360,7 @@ h1
     height: 23%;
     background-color: white;
     margin-top: 20px;
-    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    box-shadow:  2px 2px 10px 2px #969191;
     cursor: pointer;
 }
 .carre:hover
@@ -431,7 +434,7 @@ article
     margin: 5px;
     padding-top: 5px;
     border-radius: 20px;
-    box-shadow: 0px 3px 0px rgb(218, 210, 210);
+    box-shadow:  0px 0px 5px 2px #969191;
     cursor: pointer;
    
 }
@@ -592,8 +595,8 @@ footer a:hover
 {
     body
     {
-      width: 80%;
-      margin-left: 0px;
+      width: auto;  
+      margin: 0;
     }
 }
 
@@ -601,14 +604,12 @@ footer a:hover
 {
     header
     {
-        width: 125%;
         height: 100px;
         padding-bottom: 10%;
-        border-bottom: 4px solid whitesmoke;
     }    
     nav 
     {
-        width: 600px;
+        width: 100%;
         height: 70px;
         display: flex;
         flex-direction: column;
@@ -627,15 +628,23 @@ footer a:hover
         margin-top: -3%;
     }
     nav li
-    {     
-        font-size: 1.2em;
-        padding: 80px;
-        margin-left: -10% ;
-    } 
+    {    
+        font-size: 20px;
+        padding: 50px;
+        margin-left: -60px;
+        margin-top: 5px;
+        margin-bottom: -140px;
+        border-bottom: 4px solid whitesmoke;
+
+    }
+    nav li:hover
+    {
+        border-bottom: #0065FC solid 4px;
+    }  
     nav li #inscrire
     {
-        margin-top: -70px;
-        margin-left: -120px;
+        margin-top: -55px;
+        margin-left: -100px;
     }
 
      div .inscrire
@@ -656,7 +665,7 @@ footer a:hover
     nav a:hover
     {
     color: #0065FC;
-    border-bottom: #0065FC solid 2px;
+    padding-bottom: 60px;
     border-top: none;
     }
     nav li #inscrire:hover
@@ -758,12 +767,12 @@ footer a:hover
     }
     #hebergements
     {
-        width: 120%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        margin-left: 1px;
+        margin-left: 30px;
         align-content: center;
         justify-content: center;
         background-color: white;
@@ -772,7 +781,7 @@ footer a:hover
     .bloc
     {
         width: 100%;
-        height: 180px;
+        height: 200px;
         padding-left: 0px;
 
     }
@@ -780,6 +789,7 @@ footer a:hover
     {
         width: 100%;
         height: 120px;
+        margin-top: 15px;
     }
     #hebergements h1
     {
@@ -799,7 +809,7 @@ footer a:hover
 
     #populaires
     {
-        width: 120%;
+        width: 110%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -839,18 +849,18 @@ footer a:hover
     }
     #populaires span i
     {
-        padding-right: 40px;
+        padding-right: 0px;
     }  
 }
 @media screen and (max-width: 487px) 
 {
     article
     {
-        width: 110%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        padding-left: 1px;
+        margin-left: 20px;
         padding-top: 1px;
     }
     article h1
@@ -941,7 +951,7 @@ footer a:hover
 {
     footer
     { 
-        width: 130%;
+        width: 120%;
         display: flex;
         flex-direction: column;
     }
@@ -953,56 +963,11 @@ footer a:hover
     }
     footer .fin_1 h2, .fin_2 h2, .fin_3 h2
     {
-        margin-left: 13%;
+        margin-left: 15%;
     }
     
 }
 
-
-
-@media all and (min-width: 300px) and (max-width: 487px)
-{
-    body
-    {
-        width: 150%;
-          
-    }
-    nav 
-    {
-        padding-left: 5%;
-    }
-    nav a 
-    {
-        color: black;
-        text-align: right;
-    }        
-    nav a:hover
-    {
-    color: #0065FC;
-    border-bottom: #0065FC solid 2px;
-    border-top: none;
-    }
-       
-    main 
-    {
-        padding-left: 0;
-    }
-    #polpulaires 
-    {
-        margin-left: 0%;
-    }
-    #hebergements
-    {
-        margin-left: 2%;
-    }
-    article
-    {
-        
-        margin-left: 5%;
-    }
-
-}
-/* Media queries: entre 487px et 890px */
 
 
 
@@ -1010,7 +975,7 @@ footer a:hover
 {
     body
     {
-        width: 60%;
+        width: auto;
           
     }
 }
@@ -1038,37 +1003,48 @@ footer a:hover
     {
         margin-top: 3%;
         margin-left: 1%;
+        width: 150px;
     }   
     nav ul 
     {
-       margin-top: -17%;     
+       margin-top: -10%;
     }
     nav li
     {     
-        font-size: 1.2em;       
+        font-size: 1.5em;
+        padding-right: 10%;        
     }
     li a 
     {
         color: black;
         float: right;
         text-align: right;
-        margin-top: 1%;
+        margin-top: -10px;
     }
-     div .inscrire
+    nav a
     {
-        display: block;
-        font-size: 1em;
-        font-weight: bold;
-        margin-top: -14%;
-        padding-left: 40%;
-        color: #0065FC;
-        cursor: pointer;
-    }        
+    text-decoration: none;
+    color: black;
+    padding: 40px 10px;
+    }
+
+
+    nav li #inscrire
+    {
+    color: #0065FC;
+    font-weight: bolder;
+    }
+    #inscrire:hover
+    {
+    border-top: 1px solid #ffff;
+    }
+    
     nav a:hover
     {
-    border-top: 3px  #0065FC;
-    padding: 0px;
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
     }
+
 }
 @media all and (min-width: 487px) and (max-width: 890px)
 {
@@ -1080,40 +1056,27 @@ footer a:hover
         margin-top: -10%;
         margin-right: 0%;
         padding-left: 3%;
-        width: 110%;
-        height: auto;
     }
     .intro h2
     {
        width: 140%;
        display: flex;
        text-align:left;
-       font-size: 1.4em;
+       font-size: 1.8em;
 
     }
     .intro h3 
     {
-        font-size: 1em;
+        font-size: 1.3em;
         width: 120%;
     }
-    div .carte
-    {
-        width: 140%;
-        padding-top: 5%;
-    }
+   
     .carte .recherche
     {
-        display: none;
-    }  
-    .carte  .loupe    
-    {
         display: initial;
-        background-color: #0065fc;
-        font-size: 1.3em;
-        color: white;
-        padding: 10px 15px 10px 15px;
-        border-radius: 0px 12px 12px 0px;    
-    }
+        width: 180px;
+    }  
+   
     .carte .loupe:hover
     {
         background: rgb(217, 217, 243);
@@ -1124,15 +1087,25 @@ footer a:hover
     .filtres
     {
         display: flex;
-        flex-direction:column;
-        margin-top: 10%;
-        margin-left: 2%;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-top: 40px;
+        width: 120%;
     }
-    .filtres button 
+    .filtres label  
     {
-        margin-top: 5%;
+        margin-top: 50px;
+        font-size: 20px;
+        padding-top: 10px;
     }
-
+    .filtres p
+    {
+        font-size: 20px;
+        font-weight: bolder;
+    }
     
     .info
     {
@@ -1162,24 +1135,24 @@ footer a:hover
     }
     #hebergements
     {
-        width: 100%;
+        width: 75%;
         height: auto;
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 0px;
+        margin-top: 90px;
+        margin-left: 80px;
         align-content: center;
         justify-content: center;
         background-color: white;
-        padding-left: 0px;
+
     }
     .bloc
     {
-        width: 150%;
+        width: 120%;
         height: 300px;
         margin-left: 90%;
-
     }
     #hebergements section img  
     {
@@ -1207,11 +1180,11 @@ footer a:hover
 
     #populaires
     {
-        width: 180%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        margin-left: 0px;
+        margin-left: 240px;
         border-radius: 30px;
         padding-left: 0px;
     }
@@ -1253,7 +1226,7 @@ footer a:hover
         font-size: 1.5em;
     }  
 }
-/* Media queries: entre 487px et 768px */
+/* Media queries: entre 487px et 890px */
 
 @media all and (min-width: 487px) and (max-width: 890px)
 {
@@ -1263,7 +1236,7 @@ footer a:hover
         height: auto;
         display: block;
         flex-direction: row;
-        margin-left: 10%;
+        margin-left: 30%;
         padding-top: 1px;
     }
     article h2
@@ -1286,68 +1259,68 @@ footer a:hover
 
     #paysage_1
     {
-        width: 350px;
+        width: 400px;
         height: 190px;
         background-color: white;
     }
     #paysage_1 img
     {
-    width: 350px;
+    width: 400px;
     height: 140px;
     }
     #paysage_2
     {
-        width: 350px;
+        width: 400px;
         height: 190px;
         background-color: white;
     }
     #paysage_2 img
     {
-    width: 350px;
+    width: 400px;
     height: 140px;
     }
     #paysage_3
     {
-        width: 350px;
+        width: 400px;
         height: 190px;
         background-color: white;
     }
     #paysage_3 img
     {
-    width: 350px;
+    width: 400px;
     height: 140px;
     }
     #paysage_4
     {
-        width: 350px;
+        width: 400px;
         height: 190px;
         background-color: white;
     }
     #paysage_4 img
     {
-    width: 350px;
+    width: 400px;
     height: 140px;
     }
     #paysage_5
     {
-        width: 350px;
+        width: 400px;
         height: 190px;
         background-color: white;
     }
     #paysage_5 img
     {
-    width: 350px;
+    width: 400px;
     height: 140px;
     }
     #paysage_6
     {
-        width: 350px;
+        width: 400px;
         height: 190px;
         background-color: white;
     }
     #paysage_6 img
     {
-    width: 350px;
+    width: 400px;
     height: 140px;
     }   
 }
@@ -1357,7 +1330,7 @@ footer a:hover
 {
     footer
     { 
-        width: 200%;
+        width: 180%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1370,44 +1343,16 @@ footer a:hover
     }
     footer .fin_1 h2, .fin_2 h2
     {
-        margin-left: 8%;
+        margin-left: 4%;
     }
     footer .fin_3 h2
     {
-        margin-left: 8%;
+        margin-left: 4%;
     }
 }
 
 
-/* Media queries: entre 487px et 890px */
-
-
-
-@media all and (min-width: 487px) and (max-width: 700px)
-{
-    body
-    {
-        width: 100%;
-          
-    }
-}
-
-@media all and (min-width: 487px) and (max-width: 700px)
-{
-    header
-    {
-        padding-bottom: 1px;
-    }
-      
-   nav 
-    {
-        margin-right: -40%;
-    }
-}
-
- 
-
-
+/* Media queries: entre 890px et 1279px */
 @media all and (min-width: 890px) and (max-width: 1279px)
 {
     body 
@@ -1573,110 +1518,3 @@ footer a:hover
     }
 }
 
-@media all and (min-width: 487px) and (max-width: 890px)
-
-{
-    article
-    {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-left: 30%;
-        padding-top: 1px;
-    }
-    article h1
-    {
-        font-size: 1.5em;
-        padding-left: 10px;
-    }
-    article h2
-    {
-        padding-left: 15px;
-        font-size: 1.5em;
-    }
-
-   
-
-    #paysage_1
-    {
-        width: 130%;
-        height: 210px;
-        background-color: white;
-    }
-    #paysage_1 img
-    {
-    width: 100%;
-    height: 140px;
-    }
-    #paysage_2
-    {
-        
-        width: 130%;
-        height: 210px;
-        background-color: white;
-    }
-    #paysage_2 img
-    {
-        width: 100%;
-        height: 140px;
-    }
-    #paysage_3
-    {
-        width: 130%;
-        height: 210px;
-        background-color: white;
-    }
-    #paysage_3 img
-    {
-        width: 100%;
-        height: 140px;
-    }
-    #paysage_4
-       
-    {   
-        width: 130%;
-        height: 210px;
-        background-color: white;
-    }
-    #paysage_4 img
-    {
-        width: 100%;
-        height: 140px;
-    }
-    #paysage_5
-    {
-        width: 130%;
-        height: 210px;
-        background-color: white;
-    }
-    #paysage_5 img
-    {
-        width: 100%;
-        height: 140px;
-    }
-    #paysage_6
-    {
-        width: 130%;
-        height: 210px;
-        background-color: white;
-    }
-    #paysage_6 img
-    {
-        width: 100%;
-        height: 140px;
-    }   
-}
-@media all and (min-width: 487px) and (max-width: 640px)
-
-{
-    footer
-    {
-        width: 230%;
-        margin-right: 1px;
-    }
-    footer .fin_1, .fin_2, .fin_3
-    {
-    margin-left: 5%; 
-    }
-}
