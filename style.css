@@ -628,7 +628,7 @@ footer a:hover
         margin-top: -3%;
     }
     nav li
-    {    
+    {   
         font-size: 20px;
         padding: 50px;
         margin-left: -60px;
@@ -725,7 +725,6 @@ footer a:hover
     {
         display: flex;
         flex-direction:column;
-        font-size: 40px;
         margin-top: 10px;
         margin-left: 2px;
     }
@@ -977,8 +976,8 @@ footer a:hover
 {
     body
     {
-        width: auto;
-          
+        width: 100%;
+        margin-right: 10px;
     }
 }
 
@@ -991,14 +990,12 @@ footer a:hover
       
    nav 
     {
-        width: 10%;
         height: 50px;
         height: 4em;
         display: flex;
         flex-direction: row;
-        padding-left: 30%;
-        padding-bottom: 20%;
-        padding-top: 1%;
+        padding-bottom: 80px;
+        padding-top: 55px;
 
     }
     #logo img
@@ -1014,7 +1011,8 @@ footer a:hover
     nav li
     {     
         font-size: 1.5em;
-        padding-right: 10%;        
+        padding-right: 25%;
+                
     }
     li a 
     {
@@ -1061,16 +1059,12 @@ footer a:hover
     }
     .intro h2
     {
-       width: 140%;
-       display: flex;
-       text-align:left;
        font-size: 1.8em;
 
     }
     .intro h3 
     {
         font-size: 1.3em;
-        width: 120%;
     }
    
     .carte .recherche
@@ -1092,16 +1086,13 @@ footer a:hover
         flex-direction:row;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 0px;
-        margin-left: 0px;
-        padding-top: 40px;
-        width: 120%;
+
     }
     .filtres label  
     {
         margin-top: 50px;
         font-size: 20px;
-        padding-top: 10px;
+        margin-bottom: 50px;
     }
     .filtres p
     {
@@ -1137,14 +1128,14 @@ footer a:hover
     }
     #hebergements
     {
-        width: 75%;
+        width: 100%;
         height: auto;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: 90px;
-        margin-left: 80px;
+        margin-left: 60px;
         align-content: center;
         justify-content: center;
         background-color: white;
@@ -1152,19 +1143,21 @@ footer a:hover
     }
     .bloc
     {
-        width: 120%;
+        width: 100%;
         height: 300px;
-        margin-left: 90%;
+        margin-left: 20px;
     }
     #hebergements section img  
     {
         width: 100%;
-        height: 200px;
+        height: 170px;
+        margin-top: 10px;
     }
     #hebergements h1
     {
+     
         font-size: 2em;
-        margin-left: 90%;
+        margin-left: 30px;
 
     }
     #hebergements h2
@@ -1172,11 +1165,17 @@ footer a:hover
         font-size: 1.5em;
         margin-top: -10px;
     }
+    #hebergements h3 
+    {
+        margin-left: 50px;
+        font-size: 20px;
+    }
     
     #hebergements p 
     {
         font-size: 1.2em;
         margin-top: -10px;
+        
     }
     /*section populaires*/
 
@@ -1186,7 +1185,7 @@ footer a:hover
         height: auto;
         display: flex;
         flex-direction: column;
-        margin-left: 240px;
+        margin-left: 80px;
         border-radius: 30px;
         padding-left: 0px;
     }
@@ -1238,7 +1237,7 @@ footer a:hover
         height: auto;
         display: block;
         flex-direction: row;
-        margin-left: 30%;
+        margin-left: 140px;
         padding-top: 1px;
     }
     article h2
@@ -1327,12 +1326,12 @@ footer a:hover
     }   
 }
 
-@media all and (min-width: 487px) and (max-width: 890px)
+@media all and (min-width: 700px) and (max-width: 890px)
 
 {
     footer
     { 
-        width: 180%;
+        width: 140%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1345,14 +1344,41 @@ footer a:hover
     }
     footer .fin_1 h2, .fin_2 h2
     {
-        margin-left: 4%;
+        margin-left: 60px;
     }
     footer .fin_3 h2
     {
-        margin-left: 4%;
+        margin-left: 60px;
     }
 }
 
+/* Media queries: entre 487px et 700px */
+
+@media all and (min-width: 487px) and (max-width: 700px)
+
+{
+    footer
+    { 
+        width: 185%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .fin_1, .fin_2, .fin_3
+    {
+    
+    font-size: 1.4em;
+    padding-left: 5%; 
+    }
+    footer .fin_1 h2, .fin_2 h2
+    {
+        margin-left: 60px;
+    }
+    footer .fin_3 h2
+    {
+        margin-left: 60px;
+    }
+}
 
 /* Media queries: entre 890px et 1279px */
 @media all and (min-width: 890px) and (max-width: 1279px)
